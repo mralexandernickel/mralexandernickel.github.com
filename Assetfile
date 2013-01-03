@@ -28,7 +28,6 @@ output "."
 # compile haml files...
 input "assets/haml" do
   match "*.haml" do
-    #filter(Rake::Pipeline::Web::Filters::TiltFilter) { |input| input.sub(/\.haml$/, ".html") }
-    tilt
+    filter(Rake::Pipeline::Web::Filters::TiltFilter) { |input| input.sub(/\.haml$/, ".html") }
   end
 end
