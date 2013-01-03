@@ -5088,10 +5088,6 @@ a.badge:hover {
 .hero-unit li {
   line-height: 30px;
 }
-#wrapper {
-  margin: 0 auto;
-  width: 960px;
-}
 .pull-right {
   float: right;
 }
