@@ -1,0 +1,33 @@
+require "rake-pipeline-web-filters"
+require "rake-pipeline-web-filters/helpers"
+require "json"
+require "haml"
+
+output "css"
+
+# Compile all Less Files and concatenate...
+input "assets" do
+  match "less/master.less" do
+    less :paths => ["assets/less"]
+      copy "application.css"
+  end
+end
+
+output "js"
+
+# compile and concat all coffeescripts...
+input "assets" do
+  match "coffee/*.coffee" do
+    coffee_script
+    concat "application.js"
+  end
+end
+
+output "."
+
+# compile haml files...
+input "assets/haml" do
+  match "*.haml" do
+    filter(Rake::Pipeline::Web::Filters::TiltFilter) { |input| input.sub(/\.haml$/, ".html") }
+  end
+end
