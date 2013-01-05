@@ -10,13 +10,13 @@
       <div class="nav-collapse collapse">
         <ul class="nav">
           {% for link in site.navigation %}
-            {% assign current = nil %}
+            {% assign active = nil %}
             {% if page.url == link.url or page.layout == link.layout %}
-              {% assign current = 'active' %}
+              {% assign active = 'active' %}
             {% endif %}
 
-            <li class="{% if forloop.first %}first{% endif %} {{ current }} {% if forloop.last %}last{% endif %}">
-              <a class="{{ current }}" href="{{ link.url }}">{{ link.text }}</a>
+            <li class="{{ active }}">
+              <a href="{{ link.url }}">{{ link.text }}</a>
             </li>
           {% endfor %}
         </ul>
