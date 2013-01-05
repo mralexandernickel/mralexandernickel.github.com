@@ -9,15 +9,16 @@
       <a class="brand">Title</a>
       <div class="nav-collapse collapse">
         <ul class="nav">
-          <li>
-            <a href="index.html">Home</a>
-          </li>
-          <li>
-            <a href="projects.html">Projects</a>
-          </li>
-          <li>
-            <a>Link</a>
-          </li>
+          {% for link in site.navigation %}
+            {% assign current = nil %}
+            {% if page.url == link.url or page.layout == link.layout %}
+              {% assign current = 'active' %}
+            {% endif %}
+
+            <li class="{% if forloop.first %}first{% endif %} {{ current }} {% if forloop.last %}last{% endif %}">
+              <a class="{{ current }}" href="{{ link.url }}">{{ link.text }}</a>
+            </li>
+          {% endfor %}
         </ul>
       </div>
     </div>

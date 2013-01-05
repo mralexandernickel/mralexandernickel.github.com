@@ -1,0 +1,5 @@
+navigation:
+- text: Home
+  url: /index.html
+- text: Projects
+  url: /projects.html
