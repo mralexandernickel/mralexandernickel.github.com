@@ -5,7 +5,7 @@ require "haml"
 
 output "css"
 
-# Compile all Less Files and concatenate...
+# compile and concat all LESS files...
 input "assets" do
   match "less/master.less" do
     less :paths => ["assets/less","assets/lib/bootstrap/less"]
@@ -23,9 +23,16 @@ input "assets" do
   end
 end
 
+# build bootstrap.js...
+input "assets/lib/bootstrap" do
+  match "js/*.js" do
+    concat ["js/bootstrap-transition.js","js/bootstrap-tooltip.js"], "bootstrap.js"
+  end
+end
+
 output "."
 
-# compile haml files...
+# compile all HAML files...
 input "assets/haml" do
   match "*.haml" do
     filter(Rake::Pipeline::Web::Filters::TiltFilter) { |input| input.sub(/\.haml$/, ".html") }

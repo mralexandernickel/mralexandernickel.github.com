@@ -5,9 +5,29 @@
     %title mralexandernickel's github page
     %link{:rel => "stylesheet", :href => "css/application.css"}
     %script{:type => "text/javascript", :src => "http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"}
+    %script{:type => "text/javascript", :src => "js/bootstrap.js"}
     %script{:type => "text/javascript", :src => "js/application.js"}
     
   %body
+    .navbar.navbar-fixed-top.navbar-inverse
+      .navbar-inner
+      
+        %button.btn.btn-navbar{:type => "button", :data => { :toggle => "collapse", :target => ".nav-collapse"}}
+          %span.icon-bar
+          %span.icon-bar
+          %span.icon-bar
+        
+        %a.brand Title
+        
+        .nav-collapse.collapse
+          %ul.nav
+            %li.active
+              %a{:href => "index.html"} Home
+            %li
+              %a{:href => "projects.html"} Projects
+            %li
+              %a Link
+    
     #wrapper.container
       .row
         %h1 mralexandernickel

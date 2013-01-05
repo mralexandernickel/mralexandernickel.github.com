@@ -2,6 +2,7 @@ source :rubygems
 
 gem "tilt"
 gem "json"
+gem "libv8"
 gem "therubyracer"
 gem "less"
 gem "coffee-script"
