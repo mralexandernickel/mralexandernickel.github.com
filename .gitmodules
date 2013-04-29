@@ -1,9 +1,9 @@
-[submodule "_assets/lib/font-awesome"]
-	path = _assets/lib/font-awesome
+[submodule "assets/lib/font-awesome"]
+	path = assets/lib/font-awesome
 	url = git://github.com/FortAwesome/Font-Awesome.git
-[submodule "_assets/lib/bootstrap"]
-	path = _assets/lib/bootstrap
+[submodule "assets/lib/bootstrap"]
+	path = assets/lib/bootstrap
 	url = git://github.com/twitter/bootstrap.git
-[submodule "_assets/lib/flyout"]
-	path = _assets/lib/flyout
+[submodule "assets/lib/flyout"]
+	path = assets/lib/flyout
 	url = git@laborserver:flyout
