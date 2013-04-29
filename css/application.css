@@ -8446,10 +8446,25 @@ a.badge:focus {
     overflow: visible !important;
   }
 }
-@media (min-width: 980px) {
-  #wrapper {
-    margin-top: 60px;
-  }
+html,
+body {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  overflow-x: hidden;
+}
+#main {
+  position: absolute;
+  z-index: 1;
+  top: 50px;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  overflow-x: hidden;
+  overflow-y: scroll;
+  padding: 0 20px;
 }
 .pull-right {
   float: right;
