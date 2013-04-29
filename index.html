@@ -10,11 +10,15 @@ layout: default
     </ul>
   </div>
   <div class="span4">
-    {% for category in site.categories %}
-    <h3>category</h3>
-    {% endfor %}
-    {% for tag in site.tags %}
-    <h3>tags</h3>
-    {% endfor %}
+    <ul>
+      {% for category in site.categories %}
+      <li>{{ category }}</li>
+      {% endfor %}
+    </ul>
+    <ul>
+      {% for tag in site.tags %}
+      <li>{{ tag }}</li>
+      {% endfor %}
+    </ul>
   </div>
 </div>
