@@ -1,9 +1,9 @@
-source :rubygems
+source "https://rubygems.org"
 
 gem "tilt"
 gem "json"
 gem "libv8"
-gem "therubyracer"
+gem "therubyracer", :git => "git://github.com/cowboyd/therubyracer.git"
 gem "less"
 gem "coffee-script"
 gem "haml"

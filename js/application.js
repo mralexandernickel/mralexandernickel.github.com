@@ -1,5 +1,4 @@
 (function() {
-
   $(function() {
     return console.log("domready");
   });
