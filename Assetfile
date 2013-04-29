@@ -34,6 +34,7 @@ end
 input "_assets/lib/assets/coffee" do
   match "*.coffee" do
     coffee_script
+    concat "flyout.js"
   end
 end
 
