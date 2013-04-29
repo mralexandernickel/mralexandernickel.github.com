@@ -13,13 +13,13 @@ layout: default
     <h3>categories</h3>
     <ul>
       {% for category in site.categories %}
-      <li>{{ category.title }}</li>
+      <li>{{ category |&nbsp;first }}</li>
       {% endfor %}
     </ul>
     <h3>tags</h3>
     <ul>
       {% for tag in site.tags %}
-      <li>{{ tag.tag }}</li>
+      <li>{{ tag |&nbsp;first }}</li>
       {% endfor %}
     </ul>
   </div>
