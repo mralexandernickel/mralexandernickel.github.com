@@ -4,3 +4,6 @@
 [submodule "_assets/lib/bootstrap"]
 	path = _assets/lib/bootstrap
 	url = git://github.com/twitter/bootstrap.git
+[submodule "_assets/lib/flyout"]
+	path = _assets/lib/flyout
+	url = git@laborserver:flyout
