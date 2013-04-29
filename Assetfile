@@ -6,7 +6,7 @@ require "haml"
 output "css"
 
 # compile and concat all LESS files...
-input "assets" do
+input "_assets" do
   match "less/master.less" do
     less :paths => ["assets/less","assets/lib/bootstrap/less"]
       copy "application.css"
@@ -16,7 +16,7 @@ end
 output "js"
 
 # compile and concat all coffeescripts...
-input "assets" do
+input "_assets" do
   match "coffee/*.coffee" do
     coffee_script
     concat "application.js"
@@ -24,7 +24,7 @@ input "assets" do
 end
 
 # build bootstrap.js...
-input "assets/lib/bootstrap" do
+input "_assets/lib/bootstrap" do
   match "js/*.js" do
     concat ["js/bootstrap-transition.js","js/bootstrap-tooltip.js"], "bootstrap.js"
   end
