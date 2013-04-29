@@ -31,7 +31,7 @@ input "_assets/lib/bootstrap" do
 end
 
 # compile flyout
-input "_assets/lib/assets/coffee" do
+input "_assets/lib/flyout/assets/coffee" do
   match "*.coffee" do
     coffee_script
     concat "flyout.js"
