@@ -2,5 +2,7 @@
 layout: default
 ---
 <div class"row">
-  <h1>mralexandernickel</h1>
+  {% for post in site.posts %}
+  <div>{{post.content}}</div>
+  {% endfor %}
 </div>
