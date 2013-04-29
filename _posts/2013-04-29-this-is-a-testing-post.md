@@ -1,7 +1,10 @@
 ---
 layout: default
 category: testing
-tags: [test,jekyll,github]
+tags:
+  - test
+  - jekyll
+  - github
 ---
 # this is just for testing
 
