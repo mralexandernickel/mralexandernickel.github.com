@@ -6,30 +6,20 @@
   </div>
   <div class="container-flyout">
     <ul class="nav nav-list">
-      <li class="nav-header">About</li>
-      <li><a href="#">eins</a></li>
-      <li><a href="#">zwei</a></li>
-      <li class="active"><a href="#">drei</a></li>
-      <li><a href="#">vier</a></li>
-      <li class="nav-header">Projects</li>
-      <li><a href="#">fünf</a></li>
-      <li><a href="#">sechs</a></li>
-      <li><a href="#">sieben</a></li>
-      <li><a href="#">acht</a></li>
-      <li><a href="#">neun</a></li>
-      <li><a href="#">zehn</a></li>
-      <li class="nav-header">Service</li>
-      <li><a href="#">elf</a></li>
-      <li><a href="#">zwölf</a></li>
-      <li><a href="#">dreizehn</a></li>
-      <li><a href="#">vierzehn</a></li>
-      <li><a href="#">fünfzehn</a></li>
-      <li class="nav-header">Events</li>
-      <li><a href="#">sechzehn</a></li>
-      <li><a href="#">siebzehn</a></li>
-      <li><a href="#">achtzehn</a></li>
-      <li><a href="#">neunzehn</a></li>
-      <li><a href="#">zwanzig</a></li>
+      <li class="nav-header">Pages</li>
+      {% for link in site.navigation %}
+        {% assign active = nil %}
+        {% if page.url == link.url or page.layout == link.layout %}
+          {% assign active = 'active' %}
+        {% endif %}
+        <li class="{{ active }}">
+          <a href="{{ link.url }}">{{ link.text }}</a>
+        </li>
+      {% endfor %}
+      <li class="nav-header">Posts</li>
+      {% for post in site.posts %}
+        <li><a href="{{ BASE_PATH }}{{ post.url }}">{{ post.title }}</a></li>
+      {% endfor %}
     </ul>
   </div>
 </div>
