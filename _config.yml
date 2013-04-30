@@ -1,13 +1,9 @@
 navigation:
-  - text: About
-    url: /about.html
-  - text: Projects
-    url: /projects.html
-  - text: Contact
-    url: /contact.html
-
-blubb: ['eins','zwei','drei']
-
-future: false
+- text: About
+  url: /about.html
+- text: Projects
+  url: /projects.html
+- text: Contact
+  url: /contact.html
 
 exclude: ['README.md','Gemfile','Gemfile.lock','Assetfile','tmp','assets']
