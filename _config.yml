@@ -8,4 +8,4 @@ navigation:
 
 future: false
 
-exclude: ['README.md','Gemfile','Gemfile.lock','Assetfile','tmp']
+exclude: ['README.md','Gemfile','Gemfile.lock','Assetfile','tmp','assets']
