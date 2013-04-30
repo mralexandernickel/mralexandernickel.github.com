@@ -8447,8 +8447,7 @@ a.badge:focus {
   }
 }
 * {
-  -webkit-tap-highlight-color: #ffc40d;
-  -moz-tap-highlight-color: #ffc40d;
+  -webkit-tap-highlight-color: transparent;
 }
 #flyout {
   z-index: 2;
