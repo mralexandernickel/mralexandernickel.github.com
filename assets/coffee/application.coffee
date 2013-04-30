@@ -9,7 +9,7 @@
 $ ->
   ua = navigator.userAgent.toLowerCase()
   isAndroid = ua.indexOf("android") > -1
-  $("#main").append $("<pre>#{isAndroid}</pre>")
+  $("#main").append $("<pre>#{isAndroid}</pre><pre>#{ua}</pre>")
   
   if $("#results").length > 0
     $.get "/search.json", (response) ->
