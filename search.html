@@ -17,6 +17,9 @@ var map = {
 
 $(function(){
   $.each(map, function(type, value) {
+    console.log(type);
+    console.log(value);
+    /*
     if (value !== null) {
       $.getJSON('/search.json', function(data) {
         posts = filterPostsByPropertyValue(data, type, value);
@@ -26,7 +29,7 @@ $(function(){
           layoutResultsPage(type, value, posts);
         }
       });
-    }
+    }*/
   });  
 });
 </script>
