@@ -7,19 +7,8 @@
 #  @copyright Alexander Nickel 2013-01-05T19:07:06Z
 # 
 $ ->
-  ua = navigator.userAgent.toLowerCase()
-  is_android = ua.indexOf("android") > -1
-  is_webkit = ua.indexOf("safari") > -1
-  is_chrome = ua.indexOf("chrome") > -1
-  is_android_default = is_android and is_webkit and is_chrome is false
   
-  Modernizr.load
-    test: Modernizr.touch and is_android_default is false
-    yep: "/lib/jquery/jquery.touchswipe.min.js"
-    nope: false
-      
-  $("#main").append $("<pre>is_android_default: #{is_android_default}</pre>")
-  
+  # search init
   if $("#results").length > 0
     $.get "/search.json", (response) ->
       map =
