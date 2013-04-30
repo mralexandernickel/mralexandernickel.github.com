@@ -6,6 +6,7 @@
       </div>
       <div class="span8">
         <ul class="nav nav-tabs">
+          {% assign active = nil %}
           {% if page.url == '/index.html' %}
             {% assign active = 'active' %}
           {% endif %}
