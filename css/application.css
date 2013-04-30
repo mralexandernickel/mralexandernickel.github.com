@@ -8534,16 +8534,16 @@ body {
   left: 0;
   overflow-x: hidden;
 }
-html.touch.positionfixed #flyout,
-body.touch.positionfixed #flyout {
+html.positionfixed #flyout,
+body.positionfixed #flyout {
   position: fixed;
 }
-html.touch.no-positionfixed #flyout,
-body.touch.no-positionfixed #flyout {
+html.no-positionfixed #flyout,
+body.no-positionfixed #flyout {
   position: absolute;
 }
-html.touch.no-positionfixed #main,
-body.touch.no-positionfixed #main {
+html.no-positionfixed #main,
+body.no-positionfixed #main {
   position: absolute;
   z-index: 1;
   top: 50px;
