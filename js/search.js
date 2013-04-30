@@ -149,31 +149,3 @@ var replaceERBTags = function(elements) {
     $this.html(txt);
   });
 };
-
-$(function() {
-  var map = {
-    'category' : getParam('category'),
-    'tags'     : getParam('tags'),
-    'search'   : getParam('search')
-  };
-  
-  console.log(map);
-
-  $.each(map, function(type, value) {
-    if (value !== null) {
-      $.getJSON('/search.json', function(data) {
-        posts = filterPostsByPropertyValue(data, type, value);
-        if (posts.length === 0) {
-          noResultsPage(type, value);
-        } else {
-          layoutResultsPage(type, value, posts);
-        }
-      });
-    }
-  });
-  
-  // Replace ERB-style Liquid tags in highlighted code blocks...
-  replaceERBTags($('div.highlight').find('code.text'));
-  // ... and in inline code
-  replaceERBTags($('p code'));
-});
