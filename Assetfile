@@ -6,9 +6,9 @@ require "haml"
 output "css"
 
 # compile and concat all LESS files...
-input "_assets" do
+input "assets" do
   match "less/master.less" do
-    less :paths => ["_assets/lib/bootstrap/less","_assets/lib/font-awesome/less","_assets/lib/flyout/assets/less","_assets/less"]
+    less :paths => ["assets/lib/bootstrap/less","assets/lib/font-awesome/less","assets/lib/flyout/assets/less","assets/less"]
       copy "application.css"
   end
 end
@@ -16,7 +16,7 @@ end
 output "js"
 
 # compile and concat all coffeescripts...
-input "_assets" do
+input "assets" do
   match "coffee/*.coffee" do
     coffee_script
     concat "application.js"
@@ -24,14 +24,14 @@ input "_assets" do
 end
 
 # build bootstrap.js...
-input "_assets/lib/bootstrap" do
+input "assets/lib/bootstrap" do
   match "js/*.js" do
     concat ["js/bootstrap-transition.js","js/bootstrap-tooltip.js"], "bootstrap.js"
   end
 end
 
 # compile flyout
-input "_assets/lib/assets/coffee" do
+input "assets/lib/assets/coffee" do
   match "*.coffee" do
     coffee_script
     concat "flyout.js"
@@ -40,7 +40,7 @@ end
 
 # copy font-awesome fonts...
 output "font"
-input "_assets/lib/font-awesome/font" do
+input "assets/lib/font-awesome/font" do
   match "fontawesome-webfont.*" do
     copy
   end
