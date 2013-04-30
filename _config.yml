@@ -7,3 +7,5 @@ navigation:
   url: /contact.html
 
 future: false
+
+exclude: ['README.md','Gemfile','Gemfile.lock','Assetfile','tmp']
