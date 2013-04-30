@@ -8446,6 +8446,82 @@ a.badge:focus {
     overflow: visible !important;
   }
 }
+* {
+  -webkit-tap-highlight-color: transparent;
+}
+#flyout {
+  position: absolute;
+  z-index: 2;
+  top: 0;
+  left: -75%;
+  bottom: 0;
+  width: 75%;
+  background: #333;
+  -webkit-transition: left 200ms cubic-bezier(0.42, 0, 0.58, 1);
+  -moz-transition: left 200ms cubic-bezier(0.42, 0, 0.58, 1);
+  -o-transition: left 200ms cubic-bezier(0.42, 0, 0.58, 1);
+  -ms-transition: left 200ms cubic-bezier(0.42, 0, 0.58, 1);
+  transition: left 200ms cubic-bezier(0.42, 0, 0.58, 1);
+}
+#flyout.open {
+  left: 0;
+}
+#flyout .flyout-bar {
+  position: absolute;
+  left: 100%;
+  top: 0;
+  width: 134%;
+  background: #fff;
+  height: 50px;
+}
+#flyout .flyout-bar .toggle {
+  font-size: 22px;
+  display: inline-block;
+  color: #000;
+  margin-top: 15px;
+  margin-left: 20px;
+}
+#flyout .flyout-bar .toggle:active {
+  color: #049cdb;
+}
+#flyout .flyout-bar .toggle:hover {
+  text-decoration: none;
+}
+#flyout .container-flyout {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  overflow-x: hidden;
+  overflow-y: scroll;
+}
+#flyout .container-flyout ul.nav li.nav-header {
+  padding: 10px 0 0 !important;
+  margin-bottom: 10px;
+  margin-left: 0 !important;
+  margin-right: 0 !important;
+  text-shadow: 0 1px 0 rgba(0, 0, 0, 0.5);
+  border-bottom: 2px solid #999;
+}
+#flyout .container-flyout ul.nav li.active a {
+  background-color: rgba(0, 0, 0, 0.7);
+  border-left: 7px solid #049cdb;
+}
+#flyout .container-flyout ul.nav li.active a:hover {
+  background-color: rgba(0, 0, 0, 0.7);
+}
+#flyout .container-flyout ul.nav li a {
+  line-height: 30px;
+  height: 30px;
+  padding: 10px 10px;
+  color: #fff;
+  border-left: 7px solid #333;
+  text-shadow: 0 1px 0 rgba(0, 0, 0, 0.5);
+}
+#flyout .container-flyout ul.nav li a:hover {
+  background-color: #333;
+}
 html,
 body {
   position: absolute;
