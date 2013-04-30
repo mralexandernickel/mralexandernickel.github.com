@@ -8504,10 +8504,6 @@ a.badge:focus {
   text-shadow: 0 1px 0 rgba(0, 0, 0, 0.5);
   border-bottom: 2px solid #999;
 }
-#flyout .container-flyout ul.nav li:active a {
-  background-color: rgba(0, 0, 0, 0.5);
-  border-left: 7px solid #ffc40d;
-}
 #flyout .container-flyout ul.nav li.active a {
   background-color: rgba(0, 0, 0, 0.7);
   border-left: 7px solid #049cdb;
@@ -8525,6 +8521,10 @@ a.badge:focus {
 }
 #flyout .container-flyout ul.nav li a:hover {
   background-color: #333;
+}
+#flyout .container-flyout ul.nav li a:active {
+  background-color: rgba(0, 0, 0, 0.3);
+  border-left: 7px solid #ffc40d;
 }
 html,
 body {
