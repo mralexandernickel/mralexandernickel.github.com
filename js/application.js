@@ -1,10 +1,12 @@
 (function() {
   $(function() {
-    var isAndroid, ua;
+    var isAndroid, isAndroidChrome, isAndroidWebkit, ua;
 
     ua = navigator.userAgent.toLowerCase();
     isAndroid = ua.indexOf("android") > -1;
-    $("#main").append($("<pre>" + isAndroid + "</pre><pre>" + ua + "</pre>"));
+    isAndroidWebkit = ua.indexOf("safari") > -1;
+    isAndroidChrome = ua.indexOf("chrome") > -1;
+    $("#main").append($("<pre>isAndroid: " + isAndroid + "</pre><pre>isAndroidChrome: " + isAndroidChrome + "</pre><pre>isAndroidWebkit: " + isAndroidWebkit + "</pre><pre>" + ua + "</pre>"));
     if ($("#results").length > 0) {
       return $.get("/search.json", function(response) {
         var map, posts, type, value, _results;
