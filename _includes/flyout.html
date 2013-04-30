@@ -10,7 +10,7 @@
       {% if page.url == '/index.html' %}
         {% assign active = 'active' %}
       {% endif %}
-      <li class="{{ active }}"><a href="/">Start</a></li>
+      <li class="{{ active }}"><a href="/">Blog</a></li>
       {% for link in site.navigation %}
         {% assign active = nil %}
         {% if page.url == link.url or page.layout == link.layout %}

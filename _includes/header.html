@@ -1,0 +1,27 @@
+<header>
+  <div class="container">
+    <div class="row">
+      <div class="span4">
+        
+      </div>
+      <div class="span8">
+        <ul class="nav nav-tabs">
+          {% if page.url == '/index.html' %}
+            {% assign active = 'active' %}
+          {% endif %}
+          <li class="{{ active }}"><a href="/">Blog</a></li>
+          {% for link in site.navigation %}
+            {% assign active = nil %}
+            {% if page.url == link.url or page.layout == link.layout %}
+              {% assign active = 'active' %}
+            {% endif %}
+
+            <li class="{{ active }}">
+              <a href="{{ link.url }}">{{ link.text }}</a>
+            </li>
+          {% endfor %}
+        </ul>
+      </div>
+    </div>
+  </div>
+</header>
