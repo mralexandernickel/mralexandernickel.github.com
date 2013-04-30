@@ -8,10 +8,12 @@
 # 
 $ ->
   ua = navigator.userAgent.toLowerCase()
-  isAndroid = ua.indexOf("android") > -1
-  isAndroidWebkit = ua.indexOf("safari") > -1
-  isAndroidChrome = ua.indexOf("chrome") > -1
-  $("#main").append $("<pre>isAndroid: #{isAndroid}</pre><pre>isAndroidChrome: #{isAndroidChrome}</pre><pre>isAndroidWebkit: #{isAndroidWebkit}</pre><pre>#{ua}</pre>")
+  is_android = ua.indexOf("android") > -1
+  is_webkit = ua.indexOf("safari") > -1
+  is_chrome = ua.indexOf("chrome") > -1
+  is_android_default = is_android and is_webkit and is_chrome is false
+  
+  $("#main").append $("<pre>is_android_default: #{is_android_default}</pre>")
   
   if $("#results").length > 0
     $.get "/search.json", (response) ->
