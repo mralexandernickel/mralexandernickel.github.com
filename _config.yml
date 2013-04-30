@@ -5,5 +5,3 @@ navigation:
   url: /projects.html
 - text: Contact
   url: /contact.html
-
-exclude: ['README.md','Gemfile','Gemfile.lock','Assetfile','tmp','assets']
