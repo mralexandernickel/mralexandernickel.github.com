@@ -7,6 +7,10 @@
   <div class="container-flyout">
     <ul class="nav nav-list">
       <li class="nav-header">Pages</li>
+      {% if page.url == '/index.html' %}
+        {% assign active = 'active' %}
+      {% endif %}
+      <li class="{{ active }}"><a href="/">Start</a></li>
       {% for link in site.navigation %}
         {% assign active = nil %}
         {% if page.url == link.url or page.layout == link.layout %}
