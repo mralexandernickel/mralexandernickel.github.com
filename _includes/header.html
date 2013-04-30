@@ -5,12 +5,11 @@
         
       </div>
       <div class="span8">
-        {{ page.url }}
         <ul class="nav nav-tabs">
           {% if page.url == '/index.html' %}
-            {% assign active = 'active' %}
+            {% assign active_index = 'active' %}
           {% endif %}
-          <li class="{{ active }}"><a href="/">Blog</a></li>
+          <li class="{{ active_index }}"><a href="/">Blog</a></li>
           {% for link in site.navigation %}
             {% assign active = nil %}
             {% if page.url == link.url or page.layout == link.layout %}
