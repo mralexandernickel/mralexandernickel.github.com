@@ -13,6 +13,11 @@ $ ->
   is_chrome = ua.indexOf("chrome") > -1
   is_android_default = is_android and is_webkit and is_chrome is false
   
+  Modernizr.load
+    test: Modernizr.touch and is_android_default is false
+    yep: "/lib/jquery/jquery.touchswipe.min.js"
+    nope: false
+      
   $("#main").append $("<pre>is_android_default: #{is_android_default}</pre>")
   
   if $("#results").length > 0
