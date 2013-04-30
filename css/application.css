@@ -8453,7 +8453,7 @@ a.badge:focus {
   z-index: 2;
   top: 0;
   left: -75%;
-  bottom: -5%;
+  bottom: 0;
   width: 75%;
   background: #333;
   -webkit-transition: left 200ms cubic-bezier(0.42, 0, 0.58, 1);
@@ -8528,25 +8528,18 @@ a.badge:focus {
 html,
 body {
   overflow-x: hidden;
-}
-html.positionfixed #flyout,
-body.positionfixed #flyout {
-  position: fixed;
-}
-html.no-positionfixed,
-body.no-positionfixed {
   position: absolute;
   top: 0;
   right: 0;
   bottom: 0;
   left: 0;
 }
-html.no-positionfixed #flyout,
-body.no-positionfixed #flyout {
+html #flyout,
+body #flyout {
   position: absolute;
 }
-html.no-positionfixed #main,
-body.no-positionfixed #main {
+html #main,
+body #main {
   position: absolute;
   z-index: 1;
   top: 50px;
