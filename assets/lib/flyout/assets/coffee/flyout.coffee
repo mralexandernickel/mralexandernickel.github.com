@@ -5,9 +5,8 @@ $ ->
     $("#flyout").toggleClass "open"
   
   # swipe functionality
-  if Modernizr.touch
-    unless is_android_default
-      $("html, body").swipe
-        swipeLeft: (event, direction, distance, duration, fingercount) -> $("#flyout").removeClass "open"
-        swipeRight: (event, direction, distance, duration, fingercount) -> $("#flyout").addClass "open"
+  unless is_android_default
+    $("html, body").swipe
+      swipeLeft: (event, direction, distance, duration, fingercount) -> $("#flyout").removeClass "open"
+      swipeRight: (event, direction, distance, duration, fingercount) -> $("#flyout").addClass "open"
       
