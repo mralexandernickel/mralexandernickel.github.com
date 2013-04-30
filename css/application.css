@@ -8450,7 +8450,6 @@ a.badge:focus {
   -webkit-tap-highlight-color: transparent;
 }
 #flyout {
-  position: absolute;
   z-index: 2;
   top: 0;
   left: -75%;
@@ -8525,6 +8524,35 @@ a.badge:focus {
 #flyout .container-flyout ul.nav li a:active {
   background-color: rgba(0, 0, 0, 0.3);
   border-left: 7px solid #ffc40d;
+}
+html,
+body {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  overflow-x: hidden;
+}
+html.touch.positionfixed #flyout,
+body.touch.positionfixed #flyout {
+  position: fixed;
+}
+html.touch.no-positionfixed #flyout,
+body.touch.no-positionfixed #flyout {
+  position: absolute;
+}
+html.touch.no-positionfixed #main,
+body.touch.no-positionfixed #main {
+  position: absolute;
+  z-index: 1;
+  top: 50px;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  overflow-x: hidden;
+  overflow-y: scroll;
+  padding: 0 20px;
 }
 @media (min-width: 980px) {
   #wrapper {
