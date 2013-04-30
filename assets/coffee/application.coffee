@@ -7,4 +7,6 @@
 #  @copyright Alexander Nickel 2013-01-05T19:07:06Z
 # 
 $ ->
-  console.log "domready"
+  ua = navigator.userAgent.toLowerCase()
+  isAndroid = ua.indexOf("android") > -1
+  $("#main").append $("<pre>#{isAndroid}</pre>")
