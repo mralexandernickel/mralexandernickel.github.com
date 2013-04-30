@@ -156,6 +156,8 @@ $(function() {
     'tags'     : getParam('tags'),
     'search'   : getParam('search')
   };
+  
+  console.log(map);
 
   $.each(map, function(type, value) {
     if (value !== null) {
