@@ -8505,7 +8505,7 @@ a.badge:focus {
   border-bottom: 2px solid #999;
 }
 #flyout .container-flyout ul.nav li:active a {
-  background-color: rgba(0, 0, 0, 0.3);
+  background-color: rgba(0, 0, 0, 0.5);
   border-left: 7px solid #ffc40d;
 }
 #flyout .container-flyout ul.nav li.active a {
