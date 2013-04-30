@@ -15,18 +15,18 @@ var map = {
   'search'   : getParam('search')
 };
 
-console.log(map);
-/*
-$.each(map, function(type, value) {
-  if (value !== null) {
-    $.getJSON('/search.json', function(data) {
-      posts = filterPostsByPropertyValue(data, type, value);
-      if (posts.length === 0) {
-        noResultsPage(type, value);
-      } else {
-        layoutResultsPage(type, value, posts);
-      }
-    });
-  }
-});*/
+$(function(){
+  $.each(map, function(type, value) {
+    if (value !== null) {
+      $.getJSON('/search.json', function(data) {
+        posts = filterPostsByPropertyValue(data, type, value);
+        if (posts.length === 0) {
+          noResultsPage(type, value);
+        } else {
+          layoutResultsPage(type, value, posts);
+        }
+      });
+    }
+  });  
+});
 </script>
