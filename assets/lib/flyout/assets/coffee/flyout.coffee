@@ -24,10 +24,9 @@ $ ->
     search_keys = ["title","category","tags"]
     
     if search_str.length > 1
-      result = $.grep window.posts, (n,i) =>
+      console.log $.grep window.posts, (n,i) ->
         if n isnt null# workaround, cause the json contains null at last position
           $.inArray "future", n.tags >= 0
-      console.log result
   
   # swipe functionality
   unless is_android_default

@@ -20,19 +20,17 @@
       return $("#backdrop").toggleClass("open");
     });
     $("#search_field").keyup(function(e) {
-      var result, search_arr, search_keys, search_str,
-        _this = this;
+      var search_arr, search_keys, search_str;
 
       search_str = $(this).val();
       search_arr = search_str.split(" ");
       search_keys = ["title", "category", "tags"];
       if (search_str.length > 1) {
-        result = $.grep(window.posts, function(n, i) {
+        return console.log($.grep(window.posts, function(n, i) {
           if (n !== null) {
             return $.inArray("future", n.tags >= 0);
           }
-        });
-        return console.log(result);
+        }));
       }
     });
     if (!is_android_default) {
