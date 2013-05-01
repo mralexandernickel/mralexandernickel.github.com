@@ -8652,6 +8652,9 @@ body.no-positionfixed #main {
 #backdrop .result:first-child {
   margin-top: 60px;
 }
+#backdrop .result a {
+  color: #049cdb;
+}
 #backdrop .result a:hover {
   color: #049cdb;
   text-decoration: none;
