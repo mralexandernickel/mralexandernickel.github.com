@@ -8494,13 +8494,42 @@ a.badge:focus {
   background: #fff;
   z-index: 99;
   height: 50px;
+  *zoom: 1;
+  -webkit-transition: all 200ms ease-in-out;
+  -moz-transition: all 200ms ease-in-out;
+  -ms-transition: all 200ms ease-in-out;
+  -o-transition: all 200ms ease-in-out;
+  transition: all 200ms ease-in-out;
+}
+#flyout .flyout-bar #flyout_search:before,
+#flyout .flyout-bar #flyout_search:after {
+  display: table;
+  content: "";
+  line-height: 0;
+}
+#flyout .flyout-bar #flyout_search:after {
+  clear: both;
+}
+#flyout .flyout-bar #flyout_search:before,
+#flyout .flyout-bar #flyout_search:after {
+  display: table;
+  content: "";
+  line-height: 0;
+}
+#flyout .flyout-bar #flyout_search:after {
+  clear: both;
+}
+#flyout .flyout-bar #flyout_search.open {
+  width: 100%;
 }
 #flyout .flyout-bar #flyout_search #flyout_search_toggle {
   margin-right: 20px;
+  float: left;
 }
 #flyout .flyout-bar #flyout_search #flyout_search_field {
   width: 0px;
   overflow: hidden;
+  float: left;
   -webkit-transition: all 200ms ease-in-out;
   -moz-transition: all 200ms ease-in-out;
   -ms-transition: all 200ms ease-in-out;
