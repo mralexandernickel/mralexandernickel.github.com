@@ -8554,6 +8554,9 @@ a.badge:focus {
   overflow-x: hidden;
   overflow-y: scroll;
 }
+#flyout .container-flyout ul.nav {
+  padding-bottom: 50px;
+}
 #flyout .container-flyout ul.nav li.nav-header {
   padding: 10px 0 0 !important;
   margin-bottom: 10px;
