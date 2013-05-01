@@ -8658,11 +8658,24 @@ body.no-positionfixed #main {
 #wrapper {
   margin-top: 60px;
 }
-header {
-  margin-top: 20px;
+@media (min-width: 768px) {
+  header {
+    margin-top: 20px;
+  }
+  header .nav {
+    margin-top: 262px;
+  }
 }
-header .nav {
-  margin-top: 262px;
+@media (max-width: 767px) {
+  header {
+    margin-top: 60px;
+  }
+  header .span4 {
+    text-align: center;
+  }
+  header .span8 {
+    display: none;
+  }
 }
 .pull-right {
   float: right;

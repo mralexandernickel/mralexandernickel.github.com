@@ -4,10 +4,24 @@
 //  @author Alexander Nickel <mr.alexander.nickel@gmail.com>
 //  @date 2013-05-01T17:44:43Z
 //
-header {
-  margin-top: 20px;
+@media (min-width: 768px) {
+  header {
+    margin-top: 20px;
   
-  .nav {
-    margin-top: 262px;
+    .nav {
+      margin-top: 262px;
+    }
+  }
+}
+
+@media (max-width: 767px) {
+  header {
+    margin-top: 60px;
+    .span4 {
+      text-align: center;
+    }
+    .span8 {
+      display: none;
+    }
   }
 }
