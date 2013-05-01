@@ -20,7 +20,7 @@ $ ->
     $("#backdrop").toggleClass "open"
   
   $("#search_field").keyup (e) ->
-    search_string = $(this).val()
+    search_str = $(this).val()
     search_arr = search_str.split " "
     if search_str.length > 1
       console.log search_arr
