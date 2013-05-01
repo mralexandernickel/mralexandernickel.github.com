@@ -4,6 +4,9 @@
       e.preventDefault();
       return $("#flyout").toggleClass("open");
     });
+    $("#flyout_search_toggle").click(function(e) {
+      return e.preventDefault();
+    });
     if (!is_android_default) {
       return $("html, body").swipe({
         swipeLeft: function(event, direction, distance, duration, fingercount) {

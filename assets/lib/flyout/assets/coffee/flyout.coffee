@@ -4,6 +4,9 @@ $ ->
     e.preventDefault()
     $("#flyout").toggleClass "open"
   
+  $("#flyout_search_toggle").click (e) ->
+    e.preventDefault()
+  
   # swipe functionality
   unless is_android_default
     $("html, body").swipe
