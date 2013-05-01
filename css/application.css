@@ -8493,6 +8493,11 @@ a.badge:focus {
   right: 0;
   background: #fff;
   z-index: 3;
+  height: 50px;
+}
+#flyout .flyout-bar #flyout_search #flyout_search_toggle {
+  width: 0px;
+  overflow: hidden;
 }
 #flyout .container-flyout {
   position: absolute;
