@@ -28,16 +28,14 @@ $ ->
     if search_str.length > 1
       result = $.grep window.posts, (n,i) ->
         state = false
-        if n?# workaround, cause the json contains null at last position
-          for key in search_keys
-            if $.isArray n[key]
-              for search_word in search_arr
-                if search_word?
-                  unless state# just set to false if NOT already true!
-                    state = ($.inArray(search_word, n[key]) >= 0)# we need to make sure that tags are ALWAYS lowercase
-            else
-              unless state
-                state = (n[key].toLowerCase().indexOf(search_str) >= 0)
+        for key in search_keys
+          if $.isArray n[key]
+            for search_word in search_arr
+              unless state# just set to false if NOT already true!
+                state = ($.inArray(search_word, n[key]) >= 0)# we need to make sure that tags are ALWAYS lowercase
+          else
+            unless state
+              state = (n[key].toLowerCase().indexOf(search_str) >= 0)
         return state
         
       # show result to user

@@ -31,22 +31,18 @@
           var key, search_word, state, _i, _j, _len, _len1;
 
           state = false;
-          if (n != null) {
-            for (_i = 0, _len = search_keys.length; _i < _len; _i++) {
-              key = search_keys[_i];
-              if ($.isArray(n[key])) {
-                for (_j = 0, _len1 = search_arr.length; _j < _len1; _j++) {
-                  search_word = search_arr[_j];
-                  if (search_word != null) {
-                    if (!state) {
-                      state = $.inArray(search_word, n[key]) >= 0;
-                    }
-                  }
-                }
-              } else {
+          for (_i = 0, _len = search_keys.length; _i < _len; _i++) {
+            key = search_keys[_i];
+            if ($.isArray(n[key])) {
+              for (_j = 0, _len1 = search_arr.length; _j < _len1; _j++) {
+                search_word = search_arr[_j];
                 if (!state) {
-                  state = n[key].toLowerCase().indexOf(search_str) >= 0;
+                  state = $.inArray(search_word, n[key]) >= 0;
                 }
+              }
+            } else {
+              if (!state) {
+                state = n[key].toLowerCase().indexOf(search_str) >= 0;
               }
             }
           }
