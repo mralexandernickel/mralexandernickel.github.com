@@ -21,6 +21,7 @@ $ ->
   
   $("#search_field").keyup (e) ->
     if $(this).val().length > 1
+      console.log posts
       newone = $.grep posts, (n,i) -> n.category is "testing"
       console.log newone
       

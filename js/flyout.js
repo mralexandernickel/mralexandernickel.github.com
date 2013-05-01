@@ -26,6 +26,7 @@
       var map, newone;
 
       if ($(this).val().length > 1) {
+        console.log(posts);
         newone = $.grep(posts, function(n, i) {
           return n.category === "testing";
         });
