@@ -36,7 +36,7 @@
               if ($.isArray(n[key])) {
                 for (_j = 0, _len1 = search_arr.length; _j < _len1; _j++) {
                   search_word = search_arr[_j];
-                  state = $.inArray(search_word, n[key].toLowerCase()) >= 0;
+                  state = $.inArray(search_word, n[key]) >= 0;
                 }
               } else {
                 state = n[key].indexOf(search_str) >= 0;
