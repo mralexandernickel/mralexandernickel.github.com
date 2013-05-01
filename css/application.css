@@ -8585,7 +8585,7 @@ body.no-positionfixed #main {
   position: absolute;
   top: 0;
   right: 0;
-  bottom: 0;
+  bottom: 100%;
   left: 0;
   width: 100%;
   z-index: 98;
@@ -8599,6 +8599,7 @@ body.no-positionfixed #main {
 }
 #backdrop.open {
   opacity: 1;
+  bottom: 0;
 }
 #wrapper {
   margin-top: 60px;
