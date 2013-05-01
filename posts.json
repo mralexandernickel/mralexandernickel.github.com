@@ -2,7 +2,10 @@
 ---
 [
   {% for post in site.posts %}
-    {% include post.json %},
+    {% if forloop.first %}
+      {% include post.json %}
+    {% else %}
+      ,{% include post.json %}
+    {% endif %}
   {% endfor %}
-  null
 ]
