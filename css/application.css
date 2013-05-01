@@ -8638,6 +8638,9 @@ body.no-positionfixed #main {
   height: 100%;
   bottom: 0;
 }
+.positionfixed #backdrop {
+  position: fixed !important;
+}
 #wrapper {
   margin-top: 60px;
 }
