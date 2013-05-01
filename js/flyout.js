@@ -20,10 +20,10 @@
       return $("#backdrop").toggleClass("open");
     });
     $("#search_field").keyup(function(e) {
-      var result, search_arr, search_str,
+      var result, search_arr, search_string,
         _this = this;
 
-      search_str = $(this).val();
+      search_string = $(this).val();
       search_arr = search_str.split(" ");
       if (search_str.length > 1) {
         console.log(search_arr);
