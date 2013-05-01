@@ -8591,11 +8591,11 @@ body.no-positionfixed #main {
   z-index: 98;
   background: rgba(0, 0, 0, 0.001);
   display: none;
-  -webkit-transition: all 200ms ease-in-out;
-  -moz-transition: all 200ms ease-in-out;
-  -ms-transition: all 200ms ease-in-out;
-  -o-transition: all 200ms ease-in-out;
-  transition: all 200ms ease-in-out;
+  -webkit-transition: background 200ms ease-in-out;
+  -moz-transition: background 200ms ease-in-out;
+  -ms-transition: background 200ms ease-in-out;
+  -o-transition: background 200ms ease-in-out;
+  transition: background 200ms ease-in-out;
 }
 #backdrop.open {
   display: block;
