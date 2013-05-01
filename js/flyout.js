@@ -5,7 +5,8 @@
       return $("#flyout").toggleClass("open");
     });
     $("#flyout_search_toggle").click(function(e) {
-      return e.preventDefault();
+      e.preventDefault();
+      return $("#flyout_search").toggleClass("open");
     });
     if (!is_android_default) {
       return $("html, body").swipe({

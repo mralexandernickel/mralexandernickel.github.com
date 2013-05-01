@@ -8495,6 +8495,9 @@ a.badge:focus {
   z-index: 3;
   height: 50px;
 }
+#flyout .flyout-bar #flyout_search.open {
+  width: 100%;
+}
 #flyout .flyout-bar #flyout_search #flyout_search_toggle {
   margin-right: 20px;
   margin-left: 0 !important;
