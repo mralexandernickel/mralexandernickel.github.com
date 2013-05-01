@@ -8658,6 +8658,12 @@ body.no-positionfixed #main {
 #wrapper {
   margin-top: 60px;
 }
+header {
+  margin-top: 20px;
+}
+header .nav {
+  margin-top: 262px;
+}
 .pull-right {
   float: right;
 }
