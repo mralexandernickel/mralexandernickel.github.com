@@ -28,7 +28,8 @@
       if ($(this).val().length > 1) {
         posts.filter(function(a, b) {
           console.log(a);
-          return console.log(b);
+          console.log(b);
+          return console.log(this);
         });
         map = {
           "category": $(this).val(),

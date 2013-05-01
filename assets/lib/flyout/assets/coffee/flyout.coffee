@@ -24,7 +24,7 @@ $ ->
       posts.filter (a,b) ->
         console.log a
         console.log b
-        
+        console.log this
       map =
         "category": $(this).val()
         "tags": $(this).val()
