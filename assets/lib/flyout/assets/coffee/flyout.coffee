@@ -15,6 +15,22 @@ $ ->
     $(this).parent().toggleClass "open"
     $("#backdrop").toggleClass "open"
   
+  $("#search_field").keyup (e) ->
+    posts = false
+    $.get "/posts.json", (response) -> posts = response
+    if $(this).val().length > 1
+      if posts
+        map =
+          "search": $(this).val()
+    
+        for type,value of map
+          posts = filterPostsByPropertyValue response, type, value
+          console.log posts
+          #if posts.length is 0
+          #  noResultsPage type, value
+          #else
+          #  layoutResultsPage type, value, posts
+  
   # swipe functionality
   unless is_android_default
     $("#script_touchswipe").load (e) ->
