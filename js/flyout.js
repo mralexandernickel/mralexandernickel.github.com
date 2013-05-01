@@ -62,7 +62,7 @@
     });
     if (!is_android_default) {
       return $("#script_touchswipe").load(function(e) {
-        return $("html, body *").swipe({
+        return $("html, body").swipe({
           swipeLeft: function(event, direction, distance, duration, fingercount) {
             return $("#flyout").removeClass("open");
           },
