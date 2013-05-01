@@ -40,7 +40,7 @@ $ ->
         
       # show result to user
       for item in result
-        backdrop.append $("<div class=\"result\"><h3>#{item.title}</h3><a class=\"btn btn-primary\" href=\"#{item.href}\">Read More...</a></div>")
+        backdrop.append $("<div class=\"result\"><a href=\"#{item.href}\"><h3>#{item.title}</h3></a></div>")
   
   # swipe functionality
   #unless is_android_default

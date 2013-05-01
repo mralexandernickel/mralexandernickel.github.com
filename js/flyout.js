@@ -51,7 +51,7 @@
         _results = [];
         for (_i = 0, _len = result.length; _i < _len; _i++) {
           item = result[_i];
-          _results.push(backdrop.append($("<div class=\"result\"><h3>" + item.title + "</h3><a class=\"btn btn-primary\" href=\"" + item.href + "\">Read More...</a></div>")));
+          _results.push(backdrop.append($("<div class=\"result\"><a href=\"" + item.href + "\"><h3>" + item.title + "</h3></a></div>")));
         }
         return _results;
       }
