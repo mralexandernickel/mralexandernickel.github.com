@@ -8642,14 +8642,15 @@ body.no-positionfixed #main {
   bottom: 0;
 }
 #backdrop .result {
-  margin: 20px 20px 0;
+  margin: 10px 10px 0;
+  padding: 10px;
   background: #ffffff;
   -webkit-border-radius: 5px;
   -moz-border-radius: 5px;
   border-radius: 5px;
 }
 #backdrop .result:first-child {
-  margin-top: 80px;
+  margin-top: 70px;
 }
 .positionfixed #backdrop {
   position: fixed !important;
