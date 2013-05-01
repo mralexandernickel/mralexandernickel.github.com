@@ -20,7 +20,7 @@
       return $("#backdrop").toggleClass("open");
     });
     $("#search_field").keyup(function(e) {
-      var result, search_arr, search_keys, search_str;
+      var backdrop, item, result, search_arr, search_keys, search_str, _i, _len, _results;
 
       search_str = $(this).val().toLowerCase();
       search_arr = search_str.split(" ");
@@ -51,7 +51,13 @@
           }
           return state;
         });
-        return console.log(result);
+        backdrop = $("#backdrop").html("");
+        _results = [];
+        for (_i = 0, _len = result.length; _i < _len; _i++) {
+          item = result[_i];
+          _results.push(backdrop.append($("<div class=\"result\"><h3>" + item.title + "</h3><a class=\"btn btn-primary\" href=\"" + item.href + "\">Read More...</a></div>")));
+        }
+        return _results;
       }
     });
     if (!is_android_default) {

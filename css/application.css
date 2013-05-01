@@ -8641,6 +8641,12 @@ body.no-positionfixed #main {
   height: 100%;
   bottom: 0;
 }
+#backdrop .result {
+  margin: 20px 20px 0;
+}
+#backdrop .result:first-child {
+  margin-top: 80px;
+}
 .positionfixed #backdrop {
   position: fixed !important;
 }

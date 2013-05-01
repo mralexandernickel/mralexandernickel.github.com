@@ -23,6 +23,7 @@ $ ->
     search_arr = search_str.split " "
     search_keys = ["title","category","tags"]
     
+    # filter posts.json
     if search_str.length > 1
       result = $.grep window.posts, (n,i) ->
         state = false
@@ -37,7 +38,11 @@ $ ->
               unless state
                 state = (n[key].toLowerCase().indexOf(search_str) >= 0)
         return state
-      console.log result
+        
+      # show result to user
+      backdrop = $("#backdrop").html ""
+      for item in result
+        backdrop.append $("<div class=\"result\"><h3>#{item.title}</h3><a class=\"btn btn-primary\" href=\"#{item.href}\">Read More...</a></div>")
   
   # swipe functionality
   unless is_android_default
