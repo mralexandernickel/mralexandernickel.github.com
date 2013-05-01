@@ -28,26 +28,14 @@
       search_keys = ["title", "category", "tags"];
       if (search_str.length > 1) {
         result = $.grep(window.posts, function(n, i) {
-          var key, search_word, state, tag, _i, _j, _k, _len, _len1, _len2;
+          var key, state, _i, _len;
 
           state = false;
           if (n != null) {
             for (_i = 0, _len = search_keys.length; _i < _len; _i++) {
               key = search_keys[_i];
-              for (_j = 0, _len1 = search_arr.length; _j < _len1; _j++) {
-                search_word = search_arr[_j];
-                if ($.isArray(key)) {
-                  for (_k = 0, _len2 = key.length; _k < _len2; _k++) {
-                    tag = key[_k];
-                    if ($.inArray(tag, n["tags"] >= 0)) {
-                      state = true;
-                    }
-                  }
-                } else {
-                  if (n[key].indexOf(search_word >= 0)) {
-                    state = true;
-                  }
-                }
+              if (n[key].toLowerCase().indexOf(search_str.toLowerCase())) {
+                state = true;
               }
             }
           }
