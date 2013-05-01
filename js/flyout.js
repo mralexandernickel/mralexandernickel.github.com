@@ -8,7 +8,8 @@
       e.preventDefault();
       $("#flyout_toggle").toggleClass("hide");
       $("#flyout_search").toggleClass("open");
-      return $("#backdrop").toggleClass("open");
+      $("#backdrop").toggleClass("open");
+      return $("#flyout_search input").focus();
     });
     if (!is_android_default) {
       return $("html, body").swipe({

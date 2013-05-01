@@ -9,6 +9,7 @@ $ ->
     $("#flyout_toggle").toggleClass "hide"
     $("#flyout_search").toggleClass "open"
     $("#backdrop").toggleClass "open"
+    $("#flyout_search input").focus()
   
   # swipe functionality
   unless is_android_default

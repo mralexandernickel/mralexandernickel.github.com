@@ -8540,6 +8540,7 @@ a.badge:focus {
   -webkit-border-radius: 0px;
   -moz-border-radius: 0px;
   border-radius: 0px;
+  text-indent: 60px;
 }
 #flyout .container-flyout {
   position: absolute;
