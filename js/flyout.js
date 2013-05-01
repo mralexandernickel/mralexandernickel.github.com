@@ -26,6 +26,10 @@
       var map, result, type, value, _results;
 
       if ($(this).val().length > 1) {
+        posts.filter(function(a, b) {
+          console.log(a);
+          return console.log(b);
+        });
         map = {
           "category": $(this).val(),
           "tags": $(this).val(),
