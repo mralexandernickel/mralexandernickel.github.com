@@ -26,7 +26,7 @@ $ ->
     if search_str.length > 1
       result = $.grep window.posts, (n,i) =>
         if n isnt null# workaround, cause the json contains null at last position
-          $.inArray search_str, n.tags >= 0
+          $.inArray "future", n.tags >= 0
       console.log result
   
   # swipe functionality

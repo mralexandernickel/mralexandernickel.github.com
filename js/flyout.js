@@ -29,7 +29,7 @@
       if (search_str.length > 1) {
         result = $.grep(window.posts, function(n, i) {
           if (n !== null) {
-            return $.inArray(search_str, n.tags >= 0);
+            return $.inArray("future", n.tags >= 0);
           }
         });
         return console.log(result);
