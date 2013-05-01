@@ -8533,6 +8533,9 @@ a.badge:focus {
   border: 0;
   float: left;
 }
+#flyout .flyout-bar #flyout_search input:focus {
+  outline: none;
+}
 #flyout .container-flyout {
   position: absolute;
   top: 0;
