@@ -8486,6 +8486,9 @@ a.badge:focus {
 #flyout .flyout-bar .toggle:hover {
   text-decoration: none;
 }
+#flyout .flyout-bar .toggle.hide {
+  display: none;
+}
 #flyout .flyout-bar #flyout_search {
   position: absolute;
   width: 60px;

@@ -6,6 +6,7 @@ $ ->
   
   $("#flyout_search_toggle").click (e) ->
     e.preventDefault()
+    $("#flyout_toggle").toggleClass "hide"
     $("#flyout_search").toggleClass "open"
     $("#backdrop").toggleClass "open"
   

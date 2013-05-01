@@ -6,6 +6,7 @@
     });
     $("#flyout_search_toggle").click(function(e) {
       e.preventDefault();
+      $("#flyout_toggle").toggleClass("hide");
       $("#flyout_search").toggleClass("open");
       return $("#backdrop").toggleClass("open");
     });
