@@ -55,11 +55,6 @@
       background: #fff;
       z-index: 99;
       height: 50px;
-      .ease-in-out(200ms);
-      
-      &.open {
-        width: 100%;
-      }
       
       #flyout_search_toggle {
         margin-right: 20px;
@@ -68,6 +63,11 @@
       #flyout_search_field {
         width: 0px;
         overflow: hidden;
+        .ease-in-out(200ms);
+      
+        &.open {
+          width: 100%;
+        }
       }
     }
   }
