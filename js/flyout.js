@@ -19,7 +19,7 @@
       $(this).parent().toggleClass("open");
       return $("#backdrop").toggleClass("open");
     });
-    $("#search_field").keyup(function(e) {
+    return $("#search_field").keyup(function(e) {
       var backdrop, item, result, search_arr, search_keys, search_str, _i, _len, _results;
 
       backdrop = $("#backdrop").html("");
@@ -56,18 +56,6 @@
         return _results;
       }
     });
-    if (!is_android_default) {
-      return $("#script_touchswipe").load(function(e) {
-        return $("html, body").swipe({
-          swipeLeft: function(event, direction, distance, duration, fingercount) {
-            return $("#flyout").removeClass("open");
-          },
-          swipeRight: function(event, direction, distance, duration, fingercount) {
-            return $("#flyout").addClass("open");
-          }
-        });
-      });
-    }
   });
 
 }).call(this);

@@ -43,9 +43,9 @@ $ ->
         backdrop.append $("<div class=\"result\"><h3>#{item.title}</h3><a class=\"btn btn-primary\" href=\"#{item.href}\">Read More...</a></div>")
   
   # swipe functionality
-  unless is_android_default
-    $("#script_touchswipe").load (e) ->
-      $("html, body").swipe
-        swipeLeft: (event, direction, distance, duration, fingercount) -> $("#flyout").removeClass "open"
-        swipeRight: (event, direction, distance, duration, fingercount) -> $("#flyout").addClass "open"
+  #unless is_android_default
+  #  $("#script_touchswipe").load (e) ->
+  #    $("html, body").swipe
+  #      swipeLeft: (event, direction, distance, duration, fingercount) -> $("#flyout").removeClass "open"
+  #      swipeRight: (event, direction, distance, duration, fingercount) -> $("#flyout").addClass "open"
       
