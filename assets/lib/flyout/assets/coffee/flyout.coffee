@@ -24,9 +24,17 @@ $ ->
     search_keys = ["title","category","tags"]
     
     if search_str.length > 1
-      console.log $.grep window.posts, (n,i) ->
-        if n isnt null# workaround, cause the json contains null at last position
-          ($.inArray(search_str, n.tags) >= 0)
+      result = $.grep window.posts, (n,i) ->
+        state = false
+        if n?# workaround, cause the json contains null at last position
+          for key in search_keys
+            if $.isArray n[key]
+              for search_word in search_arr
+                state = ($.inArray(search_word, n[key].toLowerCase()) >= 0)
+            else
+              state = (n[key].indexOf(search_str) >= 0)
+        return state
+      console.log result
   
   # swipe functionality
   unless is_android_default

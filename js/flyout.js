@@ -20,17 +20,32 @@
       return $("#backdrop").toggleClass("open");
     });
     $("#search_field").keyup(function(e) {
-      var search_arr, search_keys, search_str;
+      var result, search_arr, search_keys, search_str;
 
       search_str = $(this).val().toLowerCase();
       search_arr = search_str.split(" ");
       search_keys = ["title", "category", "tags"];
       if (search_str.length > 1) {
-        return console.log($.grep(window.posts, function(n, i) {
-          if (n !== null) {
-            return $.inArray(search_str, n.tags) >= 0;
+        result = $.grep(window.posts, function(n, i) {
+          var key, search_word, state, _i, _j, _len, _len1;
+
+          state = false;
+          if (n != null) {
+            for (_i = 0, _len = search_keys.length; _i < _len; _i++) {
+              key = search_keys[_i];
+              if ($.isArray(n[key])) {
+                for (_j = 0, _len1 = search_arr.length; _j < _len1; _j++) {
+                  search_word = search_arr[_j];
+                  state = $.inArray(search_word, n[key].toLowerCase()) >= 0;
+                }
+              } else {
+                state = n[key].indexOf(search_str) >= 0;
+              }
+            }
           }
-        }));
+          return state;
+        });
+        return console.log(result);
       }
     });
     if (!is_android_default) {
