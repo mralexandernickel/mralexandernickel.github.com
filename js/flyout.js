@@ -7,13 +7,13 @@
     $("#flyout_search_toggle").click(function(e) {
       e.preventDefault();
       $("#flyout_toggle").toggleClass("hide");
-      $("#flyout_search").toggleClass("open");
-      $("#backdrop").toggleClass("open");
       if ($(this).parent().hasClass("open")) {
-        return $("#flyout_search input").blur();
+        $("#flyout_search input").blur();
       } else {
-        return $("#flyout_search input").focus();
+        $("#flyout_search input").focus();
       }
+      $(this).parent().toggleClass("open");
+      return $("#backdrop").toggleClass("open");
     });
     if (!is_android_default) {
       return $("html, body").swipe({
