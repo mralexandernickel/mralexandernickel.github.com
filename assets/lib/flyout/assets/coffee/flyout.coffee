@@ -35,7 +35,7 @@ $ ->
                     state = ($.inArray(search_word, n[key]) >= 0)# we need to make sure that tags are ALWAYS lowercase
             else
               unless state
-                state = (n[key].indexOf(search_str) >= 0)
+                state = (n[key].toLowerCase().indexOf(search_str) >= 0)
         return state
       console.log result
   

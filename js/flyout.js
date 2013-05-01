@@ -44,7 +44,7 @@
                 }
               } else {
                 if (!state) {
-                  state = n[key].indexOf(search_str) >= 0;
+                  state = n[key].toLowerCase().indexOf(search_str) >= 0;
                 }
               }
             }
