@@ -1,5 +1,11 @@
 (function() {
   $(function() {
+    var posts;
+
+    posts = [];
+    $.get("/posts.json", function(response) {
+      return posts = response;
+    });
     $("#flyout_toggle").click(function(e) {
       e.preventDefault();
       return $("#flyout").toggleClass("open");
@@ -17,25 +23,19 @@
       return $("#backdrop").toggleClass("open");
     });
     $("#search_field").keyup(function(e) {
-      var map, posts, type, value, _results;
+      var map, result, type, value, _results;
 
-      posts = false;
-      $.get("/posts.json", function(response) {
-        return posts = response;
-      });
       if ($(this).val().length > 1) {
-        if (posts) {
-          map = {
-            "search": $(this).val()
-          };
-          _results = [];
-          for (type in map) {
-            value = map[type];
-            posts = filterPostsByPropertyValue(response, type, value);
-            _results.push(console.log(posts));
-          }
-          return _results;
+        map = {
+          "search": $(this).val()
+        };
+        _results = [];
+        for (type in map) {
+          value = map[type];
+          result = filterPostsByPropertyValue(posts, type, value);
+          _results.push(console.log(result));
         }
+        return _results;
       }
     });
     if (!is_android_default) {
