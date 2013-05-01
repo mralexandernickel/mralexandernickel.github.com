@@ -30,9 +30,12 @@ $ ->
           for key in search_keys
             if $.isArray n[key]
               for search_word in search_arr
-                state = ($.inArray(search_word, n[key]) >= 0)# we need to make sure that tags are ALWAYS lowercase
+                if search_word?
+                  unless state# just set to false if NOT already true!
+                    state = ($.inArray(search_word, n[key]) >= 0)# we need to make sure that tags are ALWAYS lowercase
             else
-              state = (n[key].indexOf(search_str) >= 0)
+              unless state
+                state = (n[key].indexOf(search_str) >= 0)
         return state
       console.log result
   

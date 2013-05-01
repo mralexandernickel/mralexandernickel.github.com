@@ -36,10 +36,16 @@
               if ($.isArray(n[key])) {
                 for (_j = 0, _len1 = search_arr.length; _j < _len1; _j++) {
                   search_word = search_arr[_j];
-                  state = $.inArray(search_word, n[key]) >= 0;
+                  if (search_word != null) {
+                    if (!state) {
+                      state = $.inArray(search_word, n[key]) >= 0;
+                    }
+                  }
                 }
               } else {
-                state = n[key].indexOf(search_str) >= 0;
+                if (!state) {
+                  state = n[key].indexOf(search_str) >= 0;
+                }
               }
             }
           }
