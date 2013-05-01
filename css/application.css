@@ -8643,6 +8643,7 @@ body.no-positionfixed #main {
 }
 #backdrop .result {
   margin: 10px 10px 0;
+  padding: 10px 20px 20px;
   background: #ffffff;
   -webkit-box-shadow: 0 0 5px rgba(0, 0, 0, 0.7);
   -moz-box-shadow: 0 0 5px rgba(0, 0, 0, 0.7);
