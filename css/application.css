@@ -8530,6 +8530,13 @@ a.badge:focus {
   top: 0;
   right: 0;
 }
+#flyout .flyout-bar #flyout_search.close input {
+  -webkit-transition: opacity 200ms ease-in-out;
+  -moz-transition: opacity 200ms ease-in-out;
+  -ms-transition: opacity 200ms ease-in-out;
+  -o-transition: opacity 200ms ease-in-out;
+  transition: opacity 200ms ease-in-out;
+}
 #flyout .flyout-bar #flyout_search input {
   height: 40px;
   width: 100%;
@@ -8539,11 +8546,6 @@ a.badge:focus {
   -moz-border-radius: 0px;
   border-radius: 0px;
   opacity: 0;
-  -webkit-transition: opacity 200ms ease-in-out;
-  -moz-transition: opacity 200ms ease-in-out;
-  -ms-transition: opacity 200ms ease-in-out;
-  -o-transition: opacity 200ms ease-in-out;
-  transition: opacity 200ms ease-in-out;
 }
 #flyout .container-flyout {
   position: absolute;
