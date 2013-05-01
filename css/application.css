@@ -8520,22 +8520,12 @@ a.badge:focus {
 #flyout .flyout-bar #flyout_search.open {
   width: 100%;
 }
-#flyout .flyout-bar #flyout_search.open input {
-  opacity: 1;
-}
 #flyout .flyout-bar #flyout_search #flyout_search_toggle {
   margin-right: 20px;
   position: absolute;
   z-index: 7;
   top: 0;
   right: 0;
-}
-#flyout .flyout-bar #flyout_search.closed input {
-  -webkit-transition: opacity 200ms ease-in-out;
-  -moz-transition: opacity 200ms ease-in-out;
-  -ms-transition: opacity 200ms ease-in-out;
-  -o-transition: opacity 200ms ease-in-out;
-  transition: opacity 200ms ease-in-out;
 }
 #flyout .flyout-bar #flyout_search input {
   height: 40px;
@@ -8545,6 +8535,14 @@ a.badge:focus {
   -webkit-border-radius: 0px;
   -moz-border-radius: 0px;
   border-radius: 0px;
+  opacity: 1;
+}
+#flyout .flyout-bar #flyout_search input.hidden {
+  -webkit-transition: opacity 200ms ease-in-out;
+  -moz-transition: opacity 200ms ease-in-out;
+  -ms-transition: opacity 200ms ease-in-out;
+  -o-transition: opacity 200ms ease-in-out;
+  transition: opacity 200ms ease-in-out;
   opacity: 0;
 }
 #flyout .container-flyout {

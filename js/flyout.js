@@ -6,7 +6,7 @@
     });
     $("#flyout_search_toggle").click(function(e) {
       e.preventDefault();
-      $(this).parent().toggleClass("closed");
+      $("#flyout_search input").toggleClass("hidden");
       $("#flyout_toggle").toggleClass("hide");
       if ($(this).parent().hasClass("open")) {
         $("#flyout_search input").blur();

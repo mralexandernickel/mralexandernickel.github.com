@@ -64,10 +64,6 @@
     
       &.open {
         width: 100%;
-        
-        input {
-          opacity: 1;
-        }
       }
       
       #flyout_search_toggle {
@@ -78,19 +74,18 @@
         right: 0;
       }
       
-      &.closed {
-        input {
-          .ease-in-out(200ms,opacity);
-        }
-      }
-      
       input {
         height: 40px;
         width: 100%;
         position: absolute;
         z-index: 6;
         .border-radius(0px);
-        opacity: 0;
+        opacity: 1;
+        
+        &.hidden {
+          .ease-in-out(200ms,opacity);
+          opacity: 0;
+        }
       }
     }
   }
