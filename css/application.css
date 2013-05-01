@@ -8590,14 +8590,15 @@ body.no-positionfixed #main {
   width: 100%;
   z-index: 98;
   background: rgba(0, 0, 0, 0.001);
-  -webkit-transition: all 1000ms ease-in-out;
-  -moz-transition: all 1000ms ease-in-out;
-  -ms-transition: all 1000ms ease-in-out;
-  -o-transition: all 1000ms ease-in-out;
-  transition: all 1000ms ease-in-out;
+  -webkit-transition: all 200ms ease-in-out;
+  -moz-transition: all 200ms ease-in-out;
+  -ms-transition: all 200ms ease-in-out;
+  -o-transition: all 200ms ease-in-out;
+  transition: all 200ms ease-in-out;
 }
 #backdrop.open {
   background: rgba(0, 0, 0, 0.7);
+  bottom: 0;
 }
 #wrapper {
   margin-top: 60px;
