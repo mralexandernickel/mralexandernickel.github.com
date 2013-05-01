@@ -1,6 +1,5 @@
 (function() {
   $(function() {
-    window.posts = [];
     $.get("/posts.json", function(response) {
       return window.posts = response;
     });
@@ -24,8 +23,8 @@
       var map, newone;
 
       if ($(this).val().length > 1) {
-        console.log(posts);
-        newone = $.grep(posts, function(n, i) {
+        console.log(window.posts);
+        newone = $.grep(window.posts, function(n, i) {
           return n.category === "testing";
         });
         console.log(newone);

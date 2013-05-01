@@ -1,7 +1,7 @@
 $ ->
   # get the search data
-  window.posts = []
-  $.get "/posts.json", (response) -> window.posts = response
+  $.get "/posts.json", (response) ->
+    window.posts = response
   
   # toggle button
   $("#flyout_toggle").click (e) ->
@@ -21,8 +21,8 @@ $ ->
   
   $("#search_field").keyup (e) ->
     if $(this).val().length > 1
-      console.log posts
-      newone = $.grep posts, (n,i) -> n.category is "testing"
+      console.log window.posts
+      newone = $.grep window.posts, (n,i) -> n.category is "testing"
       console.log newone
       
       map =
