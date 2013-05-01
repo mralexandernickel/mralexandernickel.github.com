@@ -8530,7 +8530,7 @@ a.badge:focus {
   top: 0;
   right: 0;
 }
-#flyout .flyout-bar #flyout_search.close input {
+#flyout .flyout-bar #flyout_search.closed input {
   -webkit-transition: opacity 200ms ease-in-out;
   -moz-transition: opacity 200ms ease-in-out;
   -ms-transition: opacity 200ms ease-in-out;

@@ -6,7 +6,7 @@ $ ->
   
   $("#flyout_search_toggle").click (e) ->
     e.preventDefault()
-    $(this).parent().toggleClass "close"
+    $(this).parent().toggleClass "closed"
     $("#flyout_toggle").toggleClass "hide"
     if $(this).parent().hasClass "open"
       $("#flyout_search input").blur()
