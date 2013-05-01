@@ -8530,14 +8530,6 @@ a.badge:focus {
   width: 0px;
   overflow: hidden;
   float: left;
-  -webkit-transition: all 200ms ease-in-out;
-  -moz-transition: all 200ms ease-in-out;
-  -ms-transition: all 200ms ease-in-out;
-  -o-transition: all 200ms ease-in-out;
-  transition: all 200ms ease-in-out;
-}
-#flyout .flyout-bar #flyout_search #flyout_search_field.open {
-  width: 100%;
 }
 #flyout .container-flyout {
   position: absolute;
