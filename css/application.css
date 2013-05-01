@@ -8667,6 +8667,17 @@ h6 {
   font-family: 'Source Sans Pro', sans-serif;
   text-transform: uppercase;
 }
+.totop {
+  display: block;
+  font-family: 'Source Sans Pro', sans-serif;
+  text-transform: uppercase;
+  padding: 10px 0;
+  text-align: center;
+  color: #ffffff;
+  background: #F14A29;
+  margin: 20px auto;
+  width: 250px;
+}
 @media (min-width: 768px) {
   header {
     margin-top: 20px;
