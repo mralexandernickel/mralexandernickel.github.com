@@ -9,7 +9,11 @@
       $("#flyout_toggle").toggleClass("hide");
       $("#flyout_search").toggleClass("open");
       $("#backdrop").toggleClass("open");
-      return $("#flyout_search input").focus();
+      if ($(this).parent().hasClass("open")) {
+        return $("#flyout_search input").blur();
+      } else {
+        return $("#flyout_search input").focus();
+      }
     });
     if (!is_android_default) {
       return $("html, body").swipe({
