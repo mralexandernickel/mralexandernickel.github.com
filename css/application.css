@@ -8643,7 +8643,7 @@ body.no-positionfixed #main {
 }
 #backdrop .result {
   margin: 10px 10px 0;
-  padding: 10px 20px 20px;
+  padding: 10px 20px;
   background: #ffffff;
   -webkit-box-shadow: 0 0 5px rgba(0, 0, 0, 0.7);
   -moz-box-shadow: 0 0 5px rgba(0, 0, 0, 0.7);
@@ -8651,6 +8651,10 @@ body.no-positionfixed #main {
 }
 #backdrop .result:first-child {
   margin-top: 60px;
+}
+#backdrop .result a:hover {
+  color: #049cdb;
+  text-decoration: none;
 }
 .positionfixed #backdrop {
   position: fixed !important;
