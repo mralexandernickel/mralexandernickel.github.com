@@ -8525,6 +8525,9 @@ a.badge:focus {
 #flyout .flyout-bar #flyout_search.open {
   width: 100%;
 }
+#flyout .flyout-bar #flyout_search.open input {
+  display: block;
+}
 #flyout .flyout-bar #flyout_search #flyout_search_toggle {
   margin-right: 20px;
   position: absolute;
@@ -8541,6 +8544,7 @@ a.badge:focus {
   -moz-border-radius: 0px;
   border-radius: 0px;
   text-indent: 60px;
+  display: none;
 }
 #flyout .container-flyout {
   position: absolute;
