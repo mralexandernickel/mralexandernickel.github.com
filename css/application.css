@@ -8533,7 +8533,7 @@ a.badge:focus {
   position: absolute;
   z-index: 7;
   top: 0;
-  left: 0;
+  right: 0;
 }
 #flyout .flyout-bar #flyout_search input {
   height: 40px;
@@ -8543,7 +8543,6 @@ a.badge:focus {
   -webkit-border-radius: 0px;
   -moz-border-radius: 0px;
   border-radius: 0px;
-  text-indent: 60px;
   opacity: 0;
   -webkit-transition: opacity 200ms ease-in-out;
   -moz-transition: opacity 200ms ease-in-out;
