@@ -22,6 +22,7 @@
     $("#search_field").keyup(function(e) {
       var backdrop, item, result, search_arr, search_keys, search_str, _i, _len, _results;
 
+      backdrop = $("#backdrop").html("");
       search_str = $(this).val().toLowerCase();
       search_arr = search_str.split(" ");
       search_keys = ["title", "category", "tags"];
@@ -51,7 +52,6 @@
           }
           return state;
         });
-        backdrop = $("#backdrop").html("");
         _results = [];
         for (_i = 0, _len = result.length; _i < _len; _i++) {
           item = result[_i];

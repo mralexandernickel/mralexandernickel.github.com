@@ -8643,6 +8643,10 @@ body.no-positionfixed #main {
 }
 #backdrop .result {
   margin: 20px 20px 0;
+  background: #ffffff;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
 }
 #backdrop .result:first-child {
   margin-top: 80px;

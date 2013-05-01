@@ -19,6 +19,7 @@ $ ->
     $("#backdrop").toggleClass "open"
   
   $("#search_field").keyup (e) ->
+    backdrop = $("#backdrop").html ""
     search_str = $(this).val().toLowerCase()
     search_arr = search_str.split " "
     search_keys = ["title","category","tags"]
@@ -40,7 +41,6 @@ $ ->
         return state
         
       # show result to user
-      backdrop = $("#backdrop").html ""
       for item in result
         backdrop.append $("<div class=\"result\"><h3>#{item.title}</h3><a class=\"btn btn-primary\" href=\"#{item.href}\">Read More...</a></div>")
   
