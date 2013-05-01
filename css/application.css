@@ -8589,17 +8589,16 @@ body.no-positionfixed #main {
   left: 0;
   width: 100%;
   z-index: 98;
-  background: rgba(0, 0, 0, 0.001);
-  display: none;
-  -webkit-transition: background 200ms ease-in-out;
-  -moz-transition: background 200ms ease-in-out;
-  -ms-transition: background 200ms ease-in-out;
-  -o-transition: background 200ms ease-in-out;
-  transition: background 200ms ease-in-out;
+  background: rgba(0, 0, 0, 0.7);
+  opacity: 0;
+  -webkit-transition: opacity 200ms ease-in-out;
+  -moz-transition: opacity 200ms ease-in-out;
+  -ms-transition: opacity 200ms ease-in-out;
+  -o-transition: opacity 200ms ease-in-out;
+  transition: opacity 200ms ease-in-out;
 }
 #backdrop.open {
-  display: block;
-  background: rgba(0, 0, 0, 0.7);
+  opacity: 1;
 }
 #wrapper {
   margin-top: 60px;

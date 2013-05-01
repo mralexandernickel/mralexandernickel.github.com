@@ -6,12 +6,11 @@
   left: 0;
   width: 100%;
   z-index: 98;
-  background: rgba(0,0,0,0.001);
-  display: none;
-  .ease-in-out(200ms,background);
+  background: rgba(0,0,0,0.7);
+  opacity: 0;
+  .ease-in-out(200ms,opacity);
   
   &.open {
-    display: block;
-    background: rgba(0,0,0,0.7);
+    opacity: 1;
   }
 }
