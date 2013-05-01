@@ -1,9 +1,8 @@
 (function() {
   $(function() {
+    window.posts = [];
     $.get("/posts.json", function(response) {
-      var posts;
-
-      return posts = response;
+      return window.posts = response;
     });
     $("#flyout_toggle").click(function(e) {
       e.preventDefault();

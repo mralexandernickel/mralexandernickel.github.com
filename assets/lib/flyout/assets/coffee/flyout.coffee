@@ -1,6 +1,7 @@
 $ ->
   # get the search data
-  $.get "/posts.json", (response) -> posts = response
+  window.posts = []
+  $.get "/posts.json", (response) -> window.posts = response
   
   # toggle button
   $("#flyout_toggle").click (e) ->
