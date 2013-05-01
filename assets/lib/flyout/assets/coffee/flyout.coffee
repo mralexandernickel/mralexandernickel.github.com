@@ -21,7 +21,7 @@ $ ->
   
   $("#search_field").keyup (e) ->
     if $(this).val().length > 1
-      posts.filter (a,b) ->
+      $(posts).filter (a,b) ->
         console.log a
         console.log b
         console.log this

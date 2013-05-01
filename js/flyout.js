@@ -26,7 +26,7 @@
       var map;
 
       if ($(this).val().length > 1) {
-        posts.filter(function(a, b) {
+        $(posts).filter(function(a, b) {
           console.log(a);
           console.log(b);
           return console.log(this);
