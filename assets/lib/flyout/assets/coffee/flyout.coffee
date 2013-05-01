@@ -21,10 +21,8 @@ $ ->
   
   $("#search_field").keyup (e) ->
     if $(this).val().length > 1
-      $(posts).filter (a,b) ->
-        console.log a
-        console.log b
-        console.log this
+      newone = $.grep posts, (n,i) -> n.category is "testing"
+      console.log newone
       
       map =
         "category": $(this).val()

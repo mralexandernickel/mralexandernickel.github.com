@@ -23,14 +23,13 @@
       return $("#backdrop").toggleClass("open");
     });
     $("#search_field").keyup(function(e) {
-      var map;
+      var map, newone;
 
       if ($(this).val().length > 1) {
-        $(posts).filter(function(a, b) {
-          console.log(a);
-          console.log(b);
-          return console.log(this);
+        newone = $.grep(posts, function(n, i) {
+          return n.category === "testing";
         });
+        console.log(newone);
         return map = {
           "category": $(this).val(),
           "tags": $(this).val(),
