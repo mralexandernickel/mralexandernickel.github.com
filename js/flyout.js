@@ -27,6 +27,8 @@
 
       if ($(this).val().length > 1) {
         map = {
+          "category": $(this).val(),
+          "tags": $(this).val(),
           "search": $(this).val()
         };
         _results = [];

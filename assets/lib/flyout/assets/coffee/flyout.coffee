@@ -22,6 +22,8 @@ $ ->
   $("#search_field").keyup (e) ->
     if $(this).val().length > 1
       map =
+        "category": $(this).val()
+        "tags": $(this).val()
         "search": $(this).val()
   
       for type,value of map
