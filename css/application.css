@@ -8585,11 +8585,12 @@ body.no-positionfixed #main {
   position: absolute;
   top: 0;
   right: 0;
-  bottom: 100%;
+  bottom: 0;
   left: 0;
   width: 100%;
   z-index: 98;
   background: rgba(0, 0, 0, 0.001);
+  display: none;
   -webkit-transition: all 200ms ease-in-out;
   -moz-transition: all 200ms ease-in-out;
   -ms-transition: all 200ms ease-in-out;
@@ -8597,8 +8598,8 @@ body.no-positionfixed #main {
   transition: all 200ms ease-in-out;
 }
 #backdrop.open {
+  display: block;
   background: rgba(0, 0, 0, 0.7);
-  bottom: 0;
 }
 #wrapper {
   margin-top: 60px;
