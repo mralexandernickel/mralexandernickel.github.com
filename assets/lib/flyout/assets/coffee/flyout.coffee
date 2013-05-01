@@ -22,7 +22,7 @@ $ ->
   $("#search_field").keyup (e) ->
     if $(this).val().length > 1
       console.log window.posts
-      newone = $.grep window.posts, (n,i) -> if n? then n.category is "testing"
+      newone = $.grep window.posts, (n,i) => if n? then n.category is $(this).val()
       console.log newone
       
       map =

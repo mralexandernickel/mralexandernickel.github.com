@@ -20,13 +20,14 @@
       return $("#backdrop").toggleClass("open");
     });
     $("#search_field").keyup(function(e) {
-      var map, newone;
+      var map, newone,
+        _this = this;
 
       if ($(this).val().length > 1) {
         console.log(window.posts);
         newone = $.grep(window.posts, function(n, i) {
           if (n != null) {
-            return n.category === "testing";
+            return n.category === $(_this).val();
           }
         });
         console.log(newone);
