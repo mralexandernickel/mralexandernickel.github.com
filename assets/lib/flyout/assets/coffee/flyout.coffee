@@ -1,6 +1,5 @@
 $ ->
   # get the search data
-  posts = []
   $.get "/posts.json", (response) -> posts = response
   
   # toggle button
