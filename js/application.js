@@ -1,5 +1,15 @@
 (function() {
   $(function() {
+    var totop;
+
+    totop = $(".totop");
+    totop.click(function(e) {
+      _gaq.push(["_trackEvent", "To Top", "Click"]);
+      e.preventDefault();
+      return $("body,html").animate({
+        scrollTop: 0
+      });
+    });
     if ($("#results").length > 0) {
       return $.get("/search.json", function(response) {
         var map, posts, type, value, _results;

@@ -8673,10 +8673,15 @@ h6 {
   text-transform: uppercase;
   padding: 10px 0;
   text-align: center;
-  color: #ffffff;
+  font-size: 26px;
+  color: #d9d9d9;
   background: #F14A29;
   margin: 20px auto;
-  width: 250px;
+  width: 200px;
+}
+.totop:hover {
+  text-decoration: none;
+  color: #d9d9d9;
 }
 @media (min-width: 768px) {
   header {

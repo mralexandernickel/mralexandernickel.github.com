@@ -7,6 +7,13 @@
 #  @copyright Alexander Nickel 2013-01-05T19:07:06Z
 # 
 $ ->
+  # totop
+  totop = $(".totop")
+  totop.click (e) ->
+    _gaq.push ["_trackEvent","To Top","Click"]
+    e.preventDefault()
+    $("body,html").animate
+      scrollTop: 0
   
   # search init
   if $("#results").length > 0
