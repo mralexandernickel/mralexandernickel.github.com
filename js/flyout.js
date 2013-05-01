@@ -25,7 +25,9 @@
       if ($(this).val().length > 1) {
         console.log(window.posts);
         newone = $.grep(window.posts, function(n, i) {
-          return n.category === "testing";
+          if (n != null) {
+            return n.category === "testing";
+          }
         });
         console.log(newone);
         return map = {
