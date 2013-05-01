@@ -8527,14 +8527,17 @@ a.badge:focus {
 }
 #flyout .flyout-bar #flyout_search #flyout_search_toggle {
   margin-right: 20px;
-  float: left;
+  position: absolute;
+  top: 0;
+  left: 0;
 }
 #flyout .flyout-bar #flyout_search input {
-  border: 0;
-  float: left;
-}
-#flyout .flyout-bar #flyout_search input:focus {
-  outline: none;
+  height: 40px;
+  width: auto;
+  position: absolute;
+  -webkit-border-radius: 0px;
+  -moz-border-radius: 0px;
+  border-radius: 0px;
 }
 #flyout .container-flyout {
   position: absolute;
