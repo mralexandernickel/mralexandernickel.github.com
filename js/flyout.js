@@ -20,22 +20,19 @@
       return $("#backdrop").toggleClass("open");
     });
     $("#search_field").keyup(function(e) {
-      var map, newone,
+      var result, search_arr, search_string,
         _this = this;
 
-      if ($(this).val().length > 1) {
-        console.log(window.posts);
-        newone = $.grep(window.posts, function(n, i) {
+      search_string = $(this).val();
+      search_arr = search_str.split(" ");
+      if (search_str.length > 1) {
+        console.log(search_arr);
+        result = $.grep(window.posts, function(n, i) {
           if (n != null) {
-            return n.category === $(_this).val();
+            return n.category === search_str;
           }
         });
-        console.log(newone);
-        return map = {
-          "category": $(this).val(),
-          "tags": $(this).val(),
-          "search": $(this).val()
-        };
+        return console.log(result);
       }
     });
     if (!is_android_default) {

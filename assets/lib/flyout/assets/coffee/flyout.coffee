@@ -20,23 +20,13 @@ $ ->
     $("#backdrop").toggleClass "open"
   
   $("#search_field").keyup (e) ->
-    if $(this).val().length > 1
-      console.log window.posts
-      newone = $.grep window.posts, (n,i) => if n? then n.category is $(this).val()
-      console.log newone
-      
-      map =
-        "category": $(this).val()
-        "tags": $(this).val()
-        "search": $(this).val()
-  
-      #for type,value of map
-        #result = filterPostsByPropertyValue posts, type, value
-        #console.log result
-        #if posts.length is 0
-        #  noResultsPage type, value
-        #else
-        #  layoutResultsPage type, value, posts
+    search_string = $(this).val()
+    search_arr = search_str.split " "
+    if search_str.length > 1
+      console.log search_arr
+      result = $.grep window.posts, (n,i) =>
+        if n? then n.category is search_str
+      console.log result
   
   # swipe functionality
   unless is_android_default
