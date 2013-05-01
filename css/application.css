@@ -8674,14 +8674,17 @@ h6 {
   padding: 10px 0;
   text-align: center;
   font-size: 26px;
-  color: #d9d9d9;
-  background: #F14A29;
+  color: #ffffff;
+  background: #049cdb;
   margin: 20px auto;
   width: 200px;
 }
 .totop:hover {
   text-decoration: none;
   color: #d9d9d9;
+}
+.totop:active {
+  background: #F14A29;
 }
 @media (min-width: 768px) {
   header {
