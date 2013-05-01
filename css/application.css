@@ -8525,6 +8525,11 @@ a.badge:focus {
 #flyout .flyout-bar #flyout_search #flyout_search_toggle {
   margin-right: 20px;
   float: left;
+  width: 60px;
+  height: 50px;
+  position: absolute;
+  top: 0;
+  left: 0;
 }
 #flyout .flyout-bar #flyout_search #flyout_search_field {
   width: 0px;
