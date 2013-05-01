@@ -1,6 +1,6 @@
 $ ->
   # toggle button
-  $("#flyout .toggle").click (e) ->
+  $("#flyout_toggle").click (e) ->
     e.preventDefault()
     $("#flyout").toggleClass "open"
   

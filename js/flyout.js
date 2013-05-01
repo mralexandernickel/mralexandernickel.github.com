@@ -1,6 +1,6 @@
 (function() {
   $(function() {
-    $("#flyout .toggle").click(function(e) {
+    $("#flyout_toggle").click(function(e) {
       e.preventDefault();
       return $("#flyout").toggleClass("open");
     });
