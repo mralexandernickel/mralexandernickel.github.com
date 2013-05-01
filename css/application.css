@@ -8492,7 +8492,7 @@ a.badge:focus {
   top: 0;
   right: 0;
   background: #fff;
-  z-index: 3;
+  z-index: 99;
   height: 50px;
   -webkit-transition: width 200ms cubic-bezier(0.42, 0, 0.58, 1);
   -moz-transition: width 200ms cubic-bezier(0.42, 0, 0.58, 1);
@@ -8580,6 +8580,18 @@ body.no-positionfixed #main {
   overflow-x: hidden;
   overflow-y: scroll;
   padding: 0 20px;
+}
+#backdrop {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 100%;
+  left: 0;
+  width: 100%;
+  z-index: 98;
+}
+#backdrop.open {
+  background: rgba(0, 0, 0, 0.7);
 }
 #wrapper {
   margin-top: 60px;

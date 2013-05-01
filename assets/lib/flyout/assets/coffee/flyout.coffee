@@ -7,6 +7,7 @@ $ ->
   $("#flyout_search_toggle").click (e) ->
     e.preventDefault()
     $("#flyout_search").toggleClass "open"
+    $("#backdrop").toggleClass "open"
   
   # swipe functionality
   unless is_android_default

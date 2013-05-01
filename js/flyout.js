@@ -6,7 +6,8 @@
     });
     $("#flyout_search_toggle").click(function(e) {
       e.preventDefault();
-      return $("#flyout_search").toggleClass("open");
+      $("#flyout_search").toggleClass("open");
+      return $("#backdrop").toggleClass("open");
     });
     if (!is_android_default) {
       return $("html, body").swipe({
