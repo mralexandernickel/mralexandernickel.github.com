@@ -8528,12 +8528,10 @@ a.badge:focus {
 #flyout .flyout-bar #flyout_search #flyout_search_toggle {
   margin-right: 20px;
   float: left;
-  position: absolute;
-  top: 0;
-  left: 0;
 }
 #flyout .flyout-bar #flyout_search input {
   border: 0;
+  float: left;
 }
 #flyout .container-flyout {
   position: absolute;
