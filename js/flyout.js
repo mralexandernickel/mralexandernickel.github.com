@@ -17,13 +17,15 @@
       return $("#backdrop").toggleClass("open");
     });
     if (!is_android_default) {
-      return $("html, body").swipe({
-        swipeLeft: function(event, direction, distance, duration, fingercount) {
-          return $("#flyout").removeClass("open");
-        },
-        swipeRight: function(event, direction, distance, duration, fingercount) {
-          return $("#flyout").addClass("open");
-        }
+      return $("#script_touchswipe").load(function(e) {
+        return $("html, body").swipe({
+          swipeLeft: function(event, direction, distance, duration, fingercount) {
+            return $("#flyout").removeClass("open");
+          },
+          swipeRight: function(event, direction, distance, duration, fingercount) {
+            return $("#flyout").addClass("open");
+          }
+        });
       });
     }
   });
