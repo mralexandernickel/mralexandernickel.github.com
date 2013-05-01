@@ -8532,14 +8532,8 @@ a.badge:focus {
   top: 0;
   left: 0;
 }
-#flyout .flyout-bar #flyout_search #flyout_search_field {
-  width: 0px;
-  overflow: hidden;
-  float: left;
-}
-#flyout .flyout-bar #flyout_search #flyout_search_field .search-query {
-  display: block;
-  width: auto;
+#flyout .flyout-bar #flyout_search input {
+  border: 0;
 }
 #flyout .container-flyout {
   position: absolute;
