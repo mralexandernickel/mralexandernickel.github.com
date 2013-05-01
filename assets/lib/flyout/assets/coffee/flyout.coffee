@@ -25,14 +25,15 @@ $ ->
         console.log a
         console.log b
         console.log this
+      
       map =
         "category": $(this).val()
         "tags": $(this).val()
         "search": $(this).val()
   
-      for type,value of map
-        result = filterPostsByPropertyValue posts, type, value
-        console.log result
+      #for type,value of map
+        #result = filterPostsByPropertyValue posts, type, value
+        #console.log result
         #if posts.length is 0
         #  noResultsPage type, value
         #else

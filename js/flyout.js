@@ -23,7 +23,7 @@
       return $("#backdrop").toggleClass("open");
     });
     $("#search_field").keyup(function(e) {
-      var map, result, type, value, _results;
+      var map;
 
       if ($(this).val().length > 1) {
         posts.filter(function(a, b) {
@@ -31,18 +31,11 @@
           console.log(b);
           return console.log(this);
         });
-        map = {
+        return map = {
           "category": $(this).val(),
           "tags": $(this).val(),
           "search": $(this).val()
         };
-        _results = [];
-        for (type in map) {
-          value = map[type];
-          result = filterPostsByPropertyValue(posts, type, value);
-          _results.push(console.log(result));
-        }
-        return _results;
       }
     });
     if (!is_android_default) {
