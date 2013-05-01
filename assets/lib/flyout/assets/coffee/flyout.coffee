@@ -1,6 +1,6 @@
 $ ->
   # get the search data
-  $.get "/posts.json", (response) ->
+  $.getJSON "/posts.json", (response) ->
     window.posts = response
   
   # toggle button

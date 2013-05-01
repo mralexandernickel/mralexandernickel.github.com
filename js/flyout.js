@@ -1,6 +1,6 @@
 (function() {
   $(function() {
-    $.get("/posts.json", function(response) {
+    $.getJSON("/posts.json", function(response) {
       return window.posts = response;
     });
     $("#flyout_toggle").click(function(e) {
