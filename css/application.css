@@ -8498,11 +8498,6 @@ a.badge:focus {
   z-index: 99;
   height: 50px;
   *zoom: 1;
-  -webkit-transition: all 200ms ease-in-out;
-  -moz-transition: all 200ms ease-in-out;
-  -ms-transition: all 200ms ease-in-out;
-  -o-transition: all 200ms ease-in-out;
-  transition: all 200ms ease-in-out;
 }
 #flyout .flyout-bar #flyout_search:before,
 #flyout .flyout-bar #flyout_search:after {
