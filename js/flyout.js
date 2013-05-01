@@ -22,13 +22,13 @@
     $("#search_field").keyup(function(e) {
       var search_arr, search_keys, search_str;
 
-      search_str = $(this).val();
+      search_str = $(this).val().toLowerCase();
       search_arr = search_str.split(" ");
       search_keys = ["title", "category", "tags"];
       if (search_str.length > 1) {
         return console.log($.grep(window.posts, function(n, i) {
           if (n !== null) {
-            return $.inArray("future", n.tags >= 0);
+            return $.inArray(search_str, n.tags) >= 0;
           }
         }));
       }

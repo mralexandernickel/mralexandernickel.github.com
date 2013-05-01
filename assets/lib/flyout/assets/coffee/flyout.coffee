@@ -19,14 +19,14 @@ $ ->
     $("#backdrop").toggleClass "open"
   
   $("#search_field").keyup (e) ->
-    search_str = $(this).val()
+    search_str = $(this).val().toLowerCase()
     search_arr = search_str.split " "
     search_keys = ["title","category","tags"]
     
     if search_str.length > 1
       console.log $.grep window.posts, (n,i) ->
         if n isnt null# workaround, cause the json contains null at last position
-          $.inArray "future", n.tags >= 0
+          ($.inArray(search_str, n.tags) >= 0)
   
   # swipe functionality
   unless is_android_default
