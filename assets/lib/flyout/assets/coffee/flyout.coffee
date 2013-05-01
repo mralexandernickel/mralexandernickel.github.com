@@ -47,7 +47,7 @@ $ ->
   # swipe functionality
   unless is_android_default
     $("#script_touchswipe").load (e) ->
-      $("html, body").swipe
+      $("html, body *").swipe
         swipeLeft: (event, direction, distance, duration, fingercount) -> $("#flyout").removeClass "open"
         swipeRight: (event, direction, distance, duration, fingercount) -> $("#flyout").addClass "open"
       
