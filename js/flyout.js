@@ -32,7 +32,7 @@
 
           state = false;
           if (n != null) {
-            if ($.inArray(search_str(n.tags))) {
+            if ($.inArray(search_str, n.tags)) {
               state = true;
             }
           }

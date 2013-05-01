@@ -27,7 +27,7 @@ $ ->
       result = $.grep window.posts, (n,i) =>
         state = false
         if n?# workaround, cause the json contains null at last position
-          if $.inArray search_str n.tags
+          if $.inArray search_str, n.tags
             state = true
         return state
       console.log result
