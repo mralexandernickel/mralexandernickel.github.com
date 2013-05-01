@@ -34,8 +34,10 @@
           if (n != null) {
             for (_i = 0, _len = search_keys.length; _i < _len; _i++) {
               key = search_keys[_i];
-              if (n[key].toLowerCase().indexOf(search_str.toLowerCase())) {
-                state = true;
+              if (!$.isArray(n[key])) {
+                if (n[key].toLowerCase().indexOf(search_str.toLowerCase())) {
+                  state = true;
+                }
               }
             }
           }

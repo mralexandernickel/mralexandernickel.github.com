@@ -28,8 +28,9 @@ $ ->
         state = false
         if n?# workaround, cause the json contains null at last position
           for key in search_keys
-            if n[key].toLowerCase().indexOf search_str.toLowerCase()
-              state = true
+            unless $.isArray n[key]
+              if n[key].toLowerCase().indexOf search_str.toLowerCase()
+                state = true
         return state
       console.log result
   
