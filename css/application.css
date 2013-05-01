@@ -8450,7 +8450,7 @@ a.badge:focus {
   -webkit-tap-highlight-color: transparent;
 }
 #flyout {
-  z-index: 2;
+  z-index: 99;
   top: 0;
   left: -75%;
   bottom: -10%;
