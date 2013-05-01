@@ -8526,7 +8526,7 @@ a.badge:focus {
   width: 100%;
 }
 #flyout .flyout-bar #flyout_search.open input {
-  display: block;
+  opacity: 1;
 }
 #flyout .flyout-bar #flyout_search #flyout_search_toggle {
   margin-right: 20px;
@@ -8545,6 +8545,12 @@ a.badge:focus {
   border-radius: 0px;
   text-indent: 60px;
   display: none;
+  opacity: 0;
+  -webkit-transition: opacity 200ms ease-in-out;
+  -moz-transition: opacity 200ms ease-in-out;
+  -ms-transition: opacity 200ms ease-in-out;
+  -o-transition: opacity 200ms ease-in-out;
+  transition: opacity 200ms ease-in-out;
 }
 #flyout .container-flyout {
   position: absolute;

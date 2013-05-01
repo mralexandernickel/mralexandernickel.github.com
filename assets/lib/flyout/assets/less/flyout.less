@@ -66,7 +66,7 @@
         width: 100%;
         
         input {
-          display: block;
+          opacity: 1;
         }
       }
       
@@ -86,6 +86,8 @@
         .border-radius(0px);
         text-indent: 60px;
         display: none;
+        opacity: 0;
+        .ease-in-out(200ms,opacity);
       }
     }
   }
