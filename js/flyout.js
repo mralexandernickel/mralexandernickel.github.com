@@ -20,17 +20,38 @@
       return $("#backdrop").toggleClass("open");
     });
     $("#search_field").keyup(function(e) {
-      var result, search_arr, search_str,
+      var result, search_arr, search_keys, search_str,
         _this = this;
 
       search_str = $(this).val();
       search_arr = search_str.split(" ");
+      search_keys = ["title", "category", "tags"];
       if (search_str.length > 1) {
-        console.log(search_arr);
         result = $.grep(window.posts, function(n, i) {
+          var key, search_word, state, tag, _i, _j, _k, _len, _len1, _len2;
+
+          state = false;
           if (n != null) {
-            return n.category === search_str;
+            for (_i = 0, _len = search_keys.length; _i < _len; _i++) {
+              key = search_keys[_i];
+              for (_j = 0, _len1 = search_arr.length; _j < _len1; _j++) {
+                search_word = search_arr[_j];
+                if ($.isArray(key)) {
+                  for (_k = 0, _len2 = key.length; _k < _len2; _k++) {
+                    tag = key[_k];
+                    if ($.inArray(tag, n["tags"] >= 0)) {
+                      state = true;
+                    }
+                  }
+                } else {
+                  if (n[key].indexOf(search_word >= 0)) {
+                    state = true;
+                  }
+                }
+              }
+            }
           }
+          return state;
         });
         return console.log(result);
       }
