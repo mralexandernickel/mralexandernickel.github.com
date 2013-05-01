@@ -28,15 +28,9 @@
       search_keys = ["title", "category", "tags"];
       if (search_str.length > 1) {
         result = $.grep(window.posts, function(n, i) {
-          var state;
-
-          state = false;
-          if (n != null) {
-            if ($.inArray(search_str, n.tags >= 0)) {
-              state = true;
-            }
+          if (n !== null) {
+            return $.inArray(search_str, n.tags >= 0);
           }
-          return state;
         });
         return console.log(result);
       }
