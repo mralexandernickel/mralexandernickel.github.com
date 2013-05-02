@@ -5,7 +5,7 @@
   "href"     : "{{ post.url }}",
   "author"   : "{{ post.author }}",
   "date_string": "{{ post.date | date_to_string }}",
-  "content"  : "{{ post.content | strip_html }}",
+  "content"  : "{{ post.content | strip_html | escape }}",
   "date"     : {
     "day"   : "{{ post.date | date: "%d" }}",
     "month" : "{{ post.date | date: "%B" }}",
