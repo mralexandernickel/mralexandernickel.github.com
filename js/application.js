@@ -57,9 +57,9 @@
       return $("#backdrop").toggleClass("open");
     });
     return $("#search_field").keyup(function(e) {
-      var backdrop, item, result, search_arr, search_keys, search_str, _i, _len, _results;
+      var item, result, search_arr, search_keys, search_results, search_str, _i, _len, _results;
 
-      backdrop = $("#backdrop").html("");
+      search_results = $("#search_results").html("");
       search_str = $(this).val().toLowerCase();
       search_arr = search_str.split(" ");
       search_keys = ["title", "category", "tags"];
@@ -88,7 +88,7 @@
         _results = [];
         for (_i = 0, _len = result.length; _i < _len; _i++) {
           item = result[_i];
-          _results.push(backdrop.append($("<div class=\"result\"><a href=\"" + item.href + "\"><h3>" + item.title + "</h3></a></div>")));
+          _results.push(search_results.append($("<article class=\"teaser\"><a href=\"" + item.href + "\"><header><h3>" + item.title + "</h3><h4><em>" + item.author + " <small>" + item.date_string + "</small></em></h4></header></a></article>")));
         }
         return _results;
       }

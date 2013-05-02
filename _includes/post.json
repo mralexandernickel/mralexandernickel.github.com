@@ -3,6 +3,8 @@
   "category" : "{{ post.category }}",
   "tags"     : [{% for tag in post.tags %}{% if forloop.first %}"{{ tag }}"{% else %},"{{ tag }}"{% endif %}{% endfor %}],
   "href"     : "{{ post.url }}",
+  "author"   : "{{ post.author }}",
+  "date_string": "{{ post.date | date_to_string }}",
   "date"     : {
     "day"   : "{{ post.date | date: "%d" }}",
     "month" : "{{ post.date | date: "%B" }}",
