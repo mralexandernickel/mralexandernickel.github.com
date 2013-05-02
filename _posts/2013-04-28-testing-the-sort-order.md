@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: post
 author: Alexander Nickel <mr.alexander.nickel@gmail.com>
 category: testing
 tags:
