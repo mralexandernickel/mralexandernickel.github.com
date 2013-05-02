@@ -8847,6 +8847,7 @@ article.teaser .read_more:active {
   top: 50px;
   left: 0;
   z-index: 98;
+  width: 100%;
 }
 #search_results_container #search_results article.teaser {
   padding-left: 20px;
