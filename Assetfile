@@ -8,7 +8,7 @@ output "css"
 # compile and concat all LESS files...
 input "assets" do
   match "less/master.less" do
-    less :paths => ["assets/lib/bootstrap/less","assets/lib/font-awesome/less","assets/lib/flyout/assets/less","assets/less"]
+    less :paths => ["assets/lib/bootstrap/less","assets/lib/font-awesome/less","assets/lib/flyout/assets/less","assets/lib/less-fontstacks/less","assets/less"]
       copy "application.css"
   end
 end
