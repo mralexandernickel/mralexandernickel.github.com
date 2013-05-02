@@ -42,6 +42,7 @@
     <div id="wrapper" class="container">
       <article>
         <h3>{{ page.title }}</h3>
+        <h4>{{ page.author }} <small>{{ post.date | date_to_string }}</small></h4>
         {{ content }}
       </article>
       <a class="totop" href="#">TO TOP</a>
