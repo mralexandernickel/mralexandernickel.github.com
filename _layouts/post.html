@@ -40,14 +40,33 @@
   
   <div id="main">
     <div id="wrapper" class="container">
-      <article>
-        <header>
-          <h3>{{ page.title }}</h3>
-          <h4><em>{{ page.author }} <small>{{ page.date | date_to_string }}</small></em></h4>
-        </header>
+      <div class="row">
+        <div class="span8">
+          <article>
+            <header>
+              <h3>{{ page.title }}</h3>
+              <h4><em>{{ page.author }} <small>{{ page.date | date_to_string }}</small></em></h4>
+            </header>
         
-        {{ content }}
-      </article>
+            {{ content }}
+          </article>
+        </div>
+        <div class="span4">
+          <h3>categories</h3>
+          <ul>
+            {% for category in page.categories %}
+            <li>{{ category | first }}</li>
+            {% endfor %}
+          </ul>
+          <h3>tags</h3>
+          <ul>
+            {% for tag in page.tags %}
+            <li>{{ tag | first }}</li>
+            {% endfor %}
+          </ul>
+        </div>
+        
+      </div>
       <a class="totop" href="#">TO TOP</a>
     </div>
     <div id="backdrop">
