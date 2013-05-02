@@ -8763,6 +8763,9 @@ h3 {
 .totop:active {
   background: #F14A29;
 }
+article header h4 {
+  font-size: 16px !important;
+}
 .pull-right {
   float: right;
 }
