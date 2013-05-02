@@ -8576,7 +8576,7 @@ a.badge:focus {
 #flyout .flyout-bar .nav-desktop li.active a:hover {
   background: #049cdb;
   border-top: 5px solid #049cdb;
-  color: #049cdb;
+  color: #ffffff;
 }
 #flyout .flyout-bar .nav-desktop li a {
   font-family: 'Source Sans Pro', sans-serif;
@@ -8829,11 +8829,11 @@ article.teaser .read_more {
   text-indent: 7px;
 }
 article.teaser .read_more:hover {
-  color: #049cdb;
+  color: #e44d26;
   text-decoration: none;
 }
 article.teaser .read_more:active {
-  color: #f16529;
+  color: #e44d26;
 }
 #search_results_container {
   position: absolute;
