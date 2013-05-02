@@ -8776,7 +8776,7 @@ article.teaser .read_more {
   font-family: 'Source Sans Pro', sans-serif;
   display: block;
   text-transform: uppercase;
-  color: #049cdb;
+  color: #049cdb !important;
   font-size: 20px;
   line-height: 30px;
   height: 30px;
