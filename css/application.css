@@ -8783,6 +8783,11 @@ article.teaser .content_wrap {
   max-height: 100px;
   overflow: hidden;
 }
+article.teaser .read_more {
+  font-family: 'Source Sans Pro', sans-serif;
+  display: block;
+  text-align: center;
+}
 .pull-right {
   float: right;
 }
