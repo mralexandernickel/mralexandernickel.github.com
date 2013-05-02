@@ -8612,6 +8612,7 @@ a.badge:focus {
   height: 50px;
   width: 60px;
   *zoom: 1;
+  position: absolute;
 }
 #flyout .flyout-bar #flyout_search:before,
 #flyout .flyout-bar #flyout_search:after {
@@ -8633,6 +8634,9 @@ a.badge:focus {
 }
 #flyout .flyout-bar #flyout_search.open {
   width: 100%;
+}
+#flyout .flyout-bar #flyout_search.open #flyout_search_toggle {
+  position: absolute;
 }
 #flyout .flyout-bar #flyout_search #flyout_search_toggle {
   margin-right: 20px;
@@ -8738,9 +8742,6 @@ body.no-positionfixed #main {
   
 }
 @media (max-width: 767px) {
-  #flyout_search.open #flyout_search_toggle {
-    position: absolute;
-  }
   #flyout_search input {
     width: 100%;
     position: absolute;

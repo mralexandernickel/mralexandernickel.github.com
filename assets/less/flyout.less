@@ -112,9 +112,14 @@
       height: 50px;
       width: 60px;
       .clearfix;
+      position: absolute;
     
       &.open {
         width: 100%;
+        
+        #flyout_search_toggle {
+          position: absolute;
+        }
       }
       
       #flyout_search_toggle {
@@ -235,11 +240,6 @@ html, body {
 // just phone
 @media (max-width: 767px) {
   #flyout_search {
-    &.open {
-      #flyout_search_toggle {
-        position: absolute;
-      }
-    }
     input {
       width: 100%;
       position: absolute;
