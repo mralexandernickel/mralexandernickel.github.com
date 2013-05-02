@@ -5,3 +5,4 @@ navigation:
   url: /projects.html
 - text: Contact
   url: /contact.html
+future: false
