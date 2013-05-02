@@ -1,0 +1,42 @@
+// 
+//  styles for search and search results
+//  
+//  @author Alexander Nickel <mr.alexander.nickel@gmail.com>
+//  @date 2013-05-02T11:52:11Z
+// 
+#search_results_container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 98;
+  
+  #search_results {
+    article.teaser {
+      padding-left: 20px;
+      padding-right: 20px;
+    
+      &:first-child {
+        margin-top: 50px;
+        padding-top: @baseLineHeight;
+      }
+    
+      &:last-child {
+        padding-bottom: @baseLineHeight;
+      }
+    
+      a {
+        color: #333;
+        display: block;
+    
+        &:hover {
+          text-decoration: none;
+          color: #333;
+        }
+    
+        &:active {
+          color: #F14A29;
+        }
+      }
+    }
+  }
+}
