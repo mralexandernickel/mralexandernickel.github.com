@@ -8698,21 +8698,6 @@ body.no-positionfixed #main {
   height: 100%;
   bottom: 0;
 }
-#backdrop .result {
-  margin: 0;
-  padding: 10px 20px;
-  background: #ffffff;
-}
-#backdrop .result:first-child {
-  margin-top: 50px;
-}
-#backdrop .result a {
-  color: #049cdb;
-}
-#backdrop .result a:hover {
-  color: #049cdb;
-  text-decoration: none;
-}
 .positionfixed #backdrop {
   position: fixed !important;
 }
