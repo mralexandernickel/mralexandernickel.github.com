@@ -12,12 +12,18 @@ article {
   }
   
   &.teaser {
-    border-bottom: 1px solid @grayLight;
+    border-bottom: 1px solid @grayLighter;
     padding-top: @baseLineHeight;
     padding-bottom: @baseLineHeight;
     
     &:first-child {
-      padding-top: 0 !important;
+      padding-top: 0;
+    }
+    
+    &:last-child {
+      border-bottom: 0;
+      padding-top: 0;
+      padding-bottom: 0;
     }
     
     .content_wrap {
