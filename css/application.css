@@ -8618,8 +8618,8 @@ a.badge:focus {
   margin-left: 0 !important;
   margin-right: 0 !important;
   text-shadow: 0 1px 0 rgba(0, 0, 0, 0.5);
-  border-bottom: 2px solid #ffffff;
-  color: #ffffff;
+  border-bottom: 2px solid #F14A29;
+  color: #F14A29;
 }
 #flyout .container-flyout ul.nav li.active a {
   background-color: rgba(0, 0, 0, 0.7);
@@ -8632,7 +8632,7 @@ a.badge:focus {
   line-height: 30px;
   height: 30px;
   padding: 10px 10px;
-  color: #049cdb;
+  color: #ffffff;
   text-transform: uppercase;
   border-left: 7px solid #333;
   text-shadow: 0 1px 0 rgba(0, 0, 0, 0.5);
@@ -8642,7 +8642,7 @@ a.badge:focus {
 }
 #flyout .container-flyout ul.nav li a:active {
   background-color: rgba(0, 0, 0, 0.3);
-  border-left: 7px solid #ffc40d;
+  border-left: 7px solid #F14A29;
 }
 html,
 body {
