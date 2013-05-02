@@ -101,6 +101,7 @@
     
     ul.nav {
       padding-bottom: 50px;// fix for mobile landscape views
+      
       li {
         &.nav-header {
           padding: 10px 0 0 !important;
@@ -108,7 +109,8 @@
           margin-left: 0 !important;
           margin-right: 0 !important;
           text-shadow: 0 1px 0 rgba(0,0,0,0.5);
-          border-bottom: 2px solid #999;
+          border-bottom: 2px solid @white;
+          color: @white;
         }
         &.active {
           a {
@@ -124,7 +126,8 @@
           line-height: 30px;
           height: 30px;
           padding: 10px 10px;
-          color: #fff;
+          color: @blue;
+          text-transform: uppercase;
           border-left: 7px solid #333;
           text-shadow: 0 1px 0 rgba(0,0,0,0.5);
           
