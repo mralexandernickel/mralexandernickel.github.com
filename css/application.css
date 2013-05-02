@@ -8717,8 +8717,44 @@ h3 {
   body > header {
     margin-top: 20px;
   }
-  body > header .nav {
-    margin-top: 262px;
+  body > header .nav-desktop {
+    *zoom: 1;
+  }
+  body > header .nav-desktop:before,
+  body > header .nav-desktop:after {
+    display: table;
+    content: "";
+    line-height: 0;
+  }
+  body > header .nav-desktop:after {
+    clear: both;
+  }
+  body > header .nav-desktop:before,
+  body > header .nav-desktop:after {
+    display: table;
+    content: "";
+    line-height: 0;
+  }
+  body > header .nav-desktop:after {
+    clear: both;
+  }
+  body > header .nav-desktop li {
+    float: left;
+  }
+  body > header .nav-desktop li.active a {
+    background: #049cdb;
+    color: #ffffff;
+  }
+  body > header .nav-desktop li a {
+    font-family: 'Source Sans Pro', sans-serif;
+    color: #049cdb;
+    font-size: 36px;
+    line-height: 50px;
+    padding: 0 25px;
+  }
+  body > header .nav-desktop li a:hover {
+    color: #049cdb;
+    text-decoration: none;
   }
 }
 @media (max-width: 767px) {
