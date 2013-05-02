@@ -12,8 +12,7 @@ $ ->
   totop.click (e) ->
     _gaq.push ["_trackEvent","To Top","Click"]
     e.preventDefault()
-    $("body,html").animate
-      scrollTop: 0
+    $("body,html").animate scrollTop: 0
   
   # search init
   if $("#results").length > 0

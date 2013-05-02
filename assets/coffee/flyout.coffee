@@ -12,6 +12,9 @@ $ ->
     # clear the results, most important on closing
     $("#search_results").html ""
     
+    # scroll to top
+    $("body,html").animate scrollTop: 0
+    
     $("#flyout_search input").toggleClass "hidden"
     $("#flyout_toggle").toggleClass "hide"
     if $(this).parent().hasClass "open"
