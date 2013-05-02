@@ -8531,7 +8531,7 @@ a.badge:focus {
 #flyout .flyout-bar .toggle {
   font-size: 22px;
   display: inline-block;
-  color: #000;
+  color: #000000;
   margin-top: 15px;
   margin-left: 20px;
 }
@@ -8569,13 +8569,13 @@ a.badge:focus {
   float: left;
 }
 #flyout .flyout-bar .nav-desktop li.active a {
-  background: #f16529;
+  background: #e44d26;
   color: #ffffff;
-  border-top: 5px solid #f16529;
+  border-top: 5px solid #e44d26;
 }
 #flyout .flyout-bar .nav-desktop li.active a:hover {
-  background: #F14A29;
-  border-top: 5px solid #f16529;
+  background: #e44d26;
+  border-top: 5px solid #e44d26;
   color: #ffffff;
 }
 #flyout .flyout-bar .nav-desktop li a {
@@ -8592,8 +8592,8 @@ a.badge:focus {
 #flyout .flyout-bar .nav-desktop li a:hover {
   text-decoration: none;
   background: #ffffff;
-  color: #f16529;
-  border-top: 5px solid #f16529;
+  color: #e44d26;
+  border-top: 5px solid #e44d26;
 }
 #flyout .flyout-bar #flyout_search {
   position: absolute;
@@ -8670,11 +8670,11 @@ a.badge:focus {
   margin-right: 0 !important;
   text-shadow: 0 1px 0 rgba(0, 0, 0, 0.5);
   border-bottom: 2px solid #f16529;
-  color: #F14A29;
+  color: #f16529;
 }
 #flyout .container-flyout ul.nav li.active a {
   background-color: rgba(0, 0, 0, 0.7);
-  border-left: 7px solid #049cdb;
+  border-left: 7px solid #f16529;
 }
 #flyout .container-flyout ul.nav li.active a:hover {
   background-color: rgba(0, 0, 0, 0.7);
@@ -8693,7 +8693,7 @@ a.badge:focus {
 }
 #flyout .container-flyout ul.nav li a:active {
   background-color: rgba(0, 0, 0, 0.3);
-  border-left: 7px solid #f16529;
+  border-left: 7px solid #049cdb;
 }
 html,
 body {
@@ -8791,10 +8791,10 @@ body > header .container {
 .totop:hover {
   text-decoration: none;
   color: #ffffff;
-  background: #f16529;
+  background: #e44d26;
 }
 .totop:active {
-  background: #f16529;
+  background: #e44d26;
 }
 article header h4 {
   font-size: 16px !important;
@@ -8860,7 +8860,7 @@ article.teaser .read_more:active {
   color: #333;
 }
 #search_results_container #search_results article.teaser a:active {
-  color: #f16529;
+  color: #e44d26;
 }
 .pull-right {
   float: right;

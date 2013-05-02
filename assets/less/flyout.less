@@ -35,7 +35,7 @@
     .toggle {
       font-size: 22px;
       display: inline-block;
-      color: #000;
+      color: @black;
       margin-top: 15px;
       margin-left: 20px;
       
@@ -60,13 +60,13 @@
         
         &.active {
           a {
-            background: @orangeLight;
+            background: @orange;
             color: @white;
-            border-top: 5px solid @orangeLight;
+            border-top: 5px solid @orange;
             
             &:hover {
-              background: #F14A29;
-              border-top: 5px solid @orangeLight;
+              background: @orange;
+              border-top: 5px solid @orange;
               color: @white;
             }
           }
@@ -86,8 +86,8 @@
           &:hover {
             text-decoration: none;
             background: @white;
-            color: @orangeLight;
-            border-top: 5px solid @orangeLight;
+            color: @orange;
+            border-top: 5px solid @orange;
           }
         }
       }
@@ -151,12 +151,12 @@
           margin-right: 0 !important;
           text-shadow: 0 1px 0 rgba(0,0,0,0.5);
           border-bottom: 2px solid @orangeLight;
-          color: #F14A29;
+          color: @orangeLight;
         }
         &.active {
           a {
             background-color: rgba(0,0,0,0.7);
-            border-left: 7px solid @blue;
+            border-left: 7px solid @orangeLight;
             
             &:hover {
               background-color: rgba(0,0,0,0.7);
@@ -178,7 +178,7 @@
           
           &:active {
             background-color: rgba(0,0,0,0.3);
-            border-left: 7px solid @orangeLight;
+            border-left: 7px solid @blue;
           }
         }
       }
