@@ -8897,6 +8897,9 @@ article.teaser .read_more:active {
 #search_results_container #search_results article.teaser a:active {
   color: #e44d26;
 }
+#search_results_container #search_results article.teaser a.read_more {
+  display: inline-block;
+}
 @media (min-width: 768px) {
   #search_results_container {
     top: 70px;
