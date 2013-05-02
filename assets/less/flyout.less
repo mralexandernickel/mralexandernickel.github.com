@@ -121,9 +121,6 @@
       
       input {
         height: 40px;
-        width: 100%;
-        position: absolute;
-        z-index: 6;
         .border-radius(0px);
         opacity: 1;
         
@@ -190,9 +187,6 @@
   }
 }
 
-@media (min-width: 980px) {
-}
-
 html, body {
   overflow-x: hidden;
   
@@ -221,6 +215,25 @@ html, body {
       overflow-x: hidden;
       overflow-y: scroll;
       padding: 0 20px;
+    }
+  }
+}
+
+// just desktops
+@media (min-width: 980px) {
+}
+
+// just tablets & small desktops
+@media (min-width: 768px) and (max-width: 979px) {
+}
+
+// just phone
+@media (max-width: 767px) {
+  #flyout_search {
+    input {
+      width: 100%;
+      position: absolute;
+      z-index: 6;
     }
   }
 }
