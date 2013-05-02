@@ -8634,6 +8634,7 @@ a.badge:focus {
 }
 #flyout .flyout-bar #flyout_search.open #flyout_search_toggle {
   position: absolute;
+  right: -1px;
 }
 #flyout .flyout-bar #flyout_search #flyout_search_toggle {
   margin-right: 20px;
