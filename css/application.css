@@ -8528,6 +8528,11 @@ a.badge:focus {
   background: #fff;
   height: 50px;
 }
+#flyout .flyout-bar #flyout_toggle {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
 #flyout .flyout-bar .toggle {
   font-size: 22px;
   display: inline-block;
