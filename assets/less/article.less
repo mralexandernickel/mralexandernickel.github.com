@@ -16,6 +16,7 @@ article {
     border-bottom: 1px solid @grayLighter;
     padding-top: @baseLineHeight;
     padding-bottom: @baseLineHeight;
+    background: @white;
     
     &:first-child {
       padding-top: 0;
@@ -54,4 +55,12 @@ article {
     }
   }
   
+}
+
+#search_results {
+  article.teaser {
+    &:first-child {
+      margin-top: 50px;
+    }
+  }
 }

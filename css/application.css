@@ -8774,6 +8774,7 @@ article.teaser {
   border-bottom: 1px solid #eeeeee;
   padding-top: 20px;
   padding-bottom: 20px;
+  background: #ffffff;
 }
 article.teaser:first-child {
   padding-top: 0;
@@ -8804,6 +8805,9 @@ article.teaser .read_more:hover {
 }
 article.teaser .read_more:active {
   color: #F14A29;
+}
+#search_results article.teaser:first-child {
+  margin-top: 50px;
 }
 .pull-right {
   float: right;
