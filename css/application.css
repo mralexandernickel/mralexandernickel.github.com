@@ -8583,7 +8583,6 @@ a.badge:focus {
   display: block;
 }
 #flyout .flyout-bar .nav-desktop li a:hover {
-  color: #ffffff;
   text-decoration: none;
 }
 #flyout .flyout-bar #flyout_search {
