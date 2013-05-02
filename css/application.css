@@ -8697,7 +8697,8 @@ a.badge:focus {
 }
 @media (min-width: 980px) {
   #flyout_search_toggle {
-    right: 20px;
+    margin-right: 40px;
+    margin-left: 0px;
   }
 }
 html,
