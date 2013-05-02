@@ -88,7 +88,7 @@
         _results = [];
         for (_i = 0, _len = result.length; _i < _len; _i++) {
           item = result[_i];
-          _results.push(search_results.append($("<article class=\"teaser span4\"><header><h3>" + item.title + "</h3><h4><em>" + item.author + " <small>" + item.date_string + "</small></em></h4></header><div class=\"content_wrap\"><p>" + item.content + "</p></div><a class=\"read_more\" href=\"" + item.href + "\">READ MORE</a></article>")));
+          _results.push(search_results.append($("<div class=\"span4\"><article class=\"teaser\"><header><h3>" + item.title + "</h3><h4><em>" + item.author + " <small>" + item.date_string + "</small></em></h4></header><div class=\"content_wrap\"><p>" + item.content + "</p></div><a class=\"read_more\" href=\"" + item.href + "\">READ MORE</a></article></div>")));
         }
         return _results;
       }

@@ -8829,7 +8829,7 @@ article.teaser .read_more:active {
 }
 #search_results_container {
   position: absolute;
-  top: 0;
+  top: 50px;
   left: 0;
   z-index: 98;
 }
@@ -8838,7 +8838,6 @@ article.teaser .read_more:active {
   padding-right: 20px;
 }
 #search_results_container #search_results article.teaser:first-child {
-  margin-top: 50px;
   padding-top: 20px;
 }
 #search_results_container #search_results article.teaser:last-child {
