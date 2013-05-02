@@ -8684,7 +8684,7 @@ body.no-positionfixed #main {
   left: 0;
   width: 100%;
   height: 0;
-  z-index: 98;
+  z-index: 97;
   background: rgba(0, 0, 0, 0.7);
   opacity: 0;
   -webkit-transition: opacity 200ms ease-in-out;
@@ -8790,26 +8790,32 @@ article.teaser .read_more:hover {
 article.teaser .read_more:active {
   color: #F14A29;
 }
-#search_results article.teaser {
+#search_results_container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 98;
+}
+#search_results_container #search_results article.teaser {
   padding-left: 20px;
   padding-right: 20px;
 }
-#search_results article.teaser:first-child {
+#search_results_container #search_results article.teaser:first-child {
   margin-top: 50px;
   padding-top: 20px;
 }
-#search_results article.teaser:last-child {
+#search_results_container #search_results article.teaser:last-child {
   padding-bottom: 20px;
 }
-#search_results article.teaser a {
+#search_results_container #search_results article.teaser a {
   color: #333;
   display: block;
 }
-#search_results article.teaser a:hover {
+#search_results_container #search_results article.teaser a:hover {
   text-decoration: none;
   color: #333;
 }
-#search_results article.teaser a:active {
+#search_results_container #search_results article.teaser a:active {
   color: #F14A29;
 }
 .pull-right {
