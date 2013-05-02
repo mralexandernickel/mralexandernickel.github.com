@@ -8799,6 +8799,9 @@ article.teaser .read_more:hover {
   color: #049cdb;
   text-decoration: none;
 }
+article.teaser .read_more:active {
+  color: #F14A29;
+}
 .pull-right {
   float: right;
 }
