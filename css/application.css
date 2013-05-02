@@ -8789,6 +8789,11 @@ h3 {
   font-family: 'Source Sans Pro', sans-serif;
   text-transform: uppercase;
 }
+@media (min-width: 768px) and (max-width: 979px) {
+  #wrapper > .row > .span8 {
+    width: auto !important;
+  }
+}
 body > header {
   margin-top: 60px;
 }
@@ -8841,7 +8846,7 @@ article.teaser:last-child {
   padding-bottom: 0;
 }
 article.teaser .content_wrap {
-  max-height: 100px;
+  max-height: 80px;
   overflow: hidden;
 }
 article.teaser .read_more {
