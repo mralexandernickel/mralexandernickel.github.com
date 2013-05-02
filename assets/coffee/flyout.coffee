@@ -40,7 +40,7 @@ $ ->
         
       # show result to user
       for item in result
-        search_results.append $("<article class=\"teaser\"><a href=\"#{item.href}\"><header><h3>#{item.title}</h3><h4><em>#{item.author} <small>#{item.date_string}</small></em></h4></header></a></article>")
+        search_results.append $("<article class=\"teaser span4\"><a href=\"#{item.href}\"><header><h3>#{item.title}</h3><h4><em>#{item.author} <small>#{item.date_string}</small></em></h4></header></a></article>")
   
   # swipe functionality
   #unless is_android_default
