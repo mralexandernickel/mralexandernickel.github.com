@@ -41,14 +41,15 @@
   <div id="main">
     <div id="wrapper" class="container">
       <article>
-        <h3>{{ page.title }}</h3>
+        <header>
+          <h3>{{ page.title }}</h3>
+          <blockquote>
+            <p>{{ page.author }}</p>
+            <small>written on {{ page.date | date_to_string }}</small>
+          </blockquote>
+        </header>
         
         {{ content }}
-        
-        <blockquote>
-          <p>by {{ page.author }}</p>
-          <small>written on {{ page.date | date_to_string }}</small>
-        </blockquote>
       </article>
       <a class="totop" href="#">TO TOP</a>
     </div>
