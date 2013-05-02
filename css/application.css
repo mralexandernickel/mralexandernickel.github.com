@@ -8765,6 +8765,7 @@ h3 {
 }
 article header h4 {
   font-size: 16px !important;
+  text-indent: 7px;
 }
 article.teaser {
   border-bottom: 1px solid #eeeeee;
@@ -8792,6 +8793,8 @@ article.teaser .read_more {
   font-size: 20px;
   line-height: 30px;
   height: 30px;
+  margin-top: 20px;
+  text-indent: 7px;
 }
 article.teaser .read_more:hover {
   color: #049cdb;
