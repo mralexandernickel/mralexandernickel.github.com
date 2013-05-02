@@ -41,15 +41,12 @@ article {
       line-height: 30px;
       height: 30px;
       margin-top: 20px;
-      text-indent: 7px;
+      padding: 0 7px;
       
-      &:hover {
-        color: @black;
+      &:hover, &:active {
+        color: @white !important;
         text-decoration: none;
-      }
-      
-      &:active {
-        color: @black;
+        background: @black;
       }
     }
   }

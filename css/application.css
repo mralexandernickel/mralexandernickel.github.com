@@ -8826,14 +8826,13 @@ article.teaser .read_more {
   line-height: 30px;
   height: 30px;
   margin-top: 20px;
-  text-indent: 7px;
+  padding: 0 7px;
 }
-article.teaser .read_more:hover {
-  color: #000000;
-  text-decoration: none;
-}
+article.teaser .read_more:hover,
 article.teaser .read_more:active {
-  color: #000000;
+  color: #ffffff !important;
+  text-decoration: none;
+  background: #000000;
 }
 #search_results_container {
   position: absolute;
