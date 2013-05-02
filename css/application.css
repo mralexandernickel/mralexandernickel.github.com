@@ -8819,7 +8819,7 @@ article.teaser .content_wrap {
 }
 article.teaser .read_more {
   font-family: 'Source Sans Pro', sans-serif;
-  display: block;
+  display: inline-block;
   text-transform: uppercase;
   color: #e44d26 !important;
   font-size: 20px;
