@@ -8790,6 +8790,9 @@ article.teaser .read_more:hover {
 article.teaser .read_more:active {
   color: #F14A29;
 }
+#search_results article.teaser {
+  padding-left: 20px;
+}
 #search_results article.teaser:first-child {
   margin-top: 50px;
 }
