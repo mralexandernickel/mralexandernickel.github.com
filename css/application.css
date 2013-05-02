@@ -8873,6 +8873,12 @@ article.teaser .read_more:active {
   z-index: 98;
   width: 100%;
 }
+#search_results_container #search_results div {
+  border-bottom: 1px solid #eeeeee;
+}
+#search_results_container #search_results div:last-child {
+  border-bottom: 0;
+}
 #search_results_container #search_results article.teaser {
   padding-left: 20px;
   padding-right: 20px;
