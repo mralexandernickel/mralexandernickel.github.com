@@ -8581,10 +8581,10 @@ a.badge:focus {
 #flyout .flyout-bar .nav-desktop li a {
   font-family: 'Source Sans Pro', sans-serif;
   color: #e44d26;
-  font-size: 24px;
-  line-height: 40px;
-  height: 40px;
-  padding: 0 20px;
+  font-size: 22px;
+  line-height: 35px;
+  height: 35px;
+  padding: 0 20px 5px;
   text-transform: uppercase;
   display: block;
   border-top: 5px solid #ffffff;
