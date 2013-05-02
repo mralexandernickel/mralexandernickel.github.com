@@ -8544,6 +8544,46 @@ a.badge:focus {
 #flyout .flyout-bar .toggle.hide {
   display: none;
 }
+#flyout .flyout-bar .nav-desktop {
+  *zoom: 1;
+}
+#flyout .flyout-bar .nav-desktop:before,
+#flyout .flyout-bar .nav-desktop:after {
+  display: table;
+  content: "";
+  line-height: 0;
+}
+#flyout .flyout-bar .nav-desktop:after {
+  clear: both;
+}
+#flyout .flyout-bar .nav-desktop:before,
+#flyout .flyout-bar .nav-desktop:after {
+  display: table;
+  content: "";
+  line-height: 0;
+}
+#flyout .flyout-bar .nav-desktop:after {
+  clear: both;
+}
+#flyout .flyout-bar .nav-desktop li {
+  float: left;
+}
+#flyout .flyout-bar .nav-desktop li.active a {
+  background: #049cdb;
+  color: #ffffff;
+}
+#flyout .flyout-bar .nav-desktop li a {
+  font-family: 'Source Sans Pro', sans-serif;
+  color: #049cdb;
+  font-size: 26px;
+  line-height: 40px;
+  padding: 0 20px;
+  text-transform: uppercase;
+}
+#flyout .flyout-bar .nav-desktop li a:hover {
+  color: #ffffff;
+  text-decoration: none;
+}
 #flyout .flyout-bar #flyout_search {
   position: absolute;
   width: 60px;
@@ -8716,46 +8756,6 @@ h3 {
 @media (min-width: 768px) {
   body > header {
     margin-top: 20px;
-  }
-  body > header .nav-desktop {
-    *zoom: 1;
-  }
-  body > header .nav-desktop:before,
-  body > header .nav-desktop:after {
-    display: table;
-    content: "";
-    line-height: 0;
-  }
-  body > header .nav-desktop:after {
-    clear: both;
-  }
-  body > header .nav-desktop:before,
-  body > header .nav-desktop:after {
-    display: table;
-    content: "";
-    line-height: 0;
-  }
-  body > header .nav-desktop:after {
-    clear: both;
-  }
-  body > header .nav-desktop li {
-    float: left;
-  }
-  body > header .nav-desktop li.active a {
-    background: #049cdb;
-    color: #ffffff;
-  }
-  body > header .nav-desktop li a {
-    font-family: 'Source Sans Pro', sans-serif;
-    color: #049cdb;
-    font-size: 26px;
-    line-height: 40px;
-    padding: 0 20px;
-    text-transform: uppercase;
-  }
-  body > header .nav-desktop li a:hover {
-    color: #ffffff;
-    text-decoration: none;
   }
 }
 @media (max-width: 767px) {
