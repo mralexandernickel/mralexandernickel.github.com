@@ -8699,9 +8699,6 @@ body.no-positionfixed #main {
   margin: 0;
   padding: 10px 20px;
   background: #ffffff;
-  -webkit-box-shadow: 0 0 5px rgba(0, 0, 0, 0.7);
-  -moz-box-shadow: 0 0 5px rgba(0, 0, 0, 0.7);
-  box-shadow: 0 0 5px rgba(0, 0, 0, 0.7);
 }
 #backdrop .result:first-child {
   margin-top: 50px;
