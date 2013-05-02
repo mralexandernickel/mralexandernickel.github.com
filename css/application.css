@@ -8546,6 +8546,7 @@ a.badge:focus {
 }
 #flyout .flyout-bar .nav-desktop {
   *zoom: 1;
+  margin-bottom: 0px;
 }
 #flyout .flyout-bar .nav-desktop:before,
 #flyout .flyout-bar .nav-desktop:after {
