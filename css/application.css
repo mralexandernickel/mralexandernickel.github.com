@@ -8767,7 +8767,7 @@ article header h4 {
   font-size: 16px !important;
 }
 article.teaser .content_wrap {
-  max-height: 100px;
+  max-height: 60px;
   overflow: hidden;
 }
 .pull-right {
