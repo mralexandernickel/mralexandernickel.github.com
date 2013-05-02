@@ -8760,6 +8760,12 @@ body > header {
 body > header .container {
   text-align: center;
 }
+@media (min-width: 980px) {
+  body > header {
+    padding-top: 80px;
+    padding-bottom: 40px;
+  }
+}
 .totop {
   display: block;
   font-family: 'Source Sans Pro', sans-serif;
