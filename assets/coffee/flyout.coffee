@@ -9,6 +9,9 @@ $ ->
   
   $("#flyout_search_toggle").click (e) ->
     e.preventDefault()
+    # clear the results, most important on closing
+    $("#search_results").html ""
+    
     $("#flyout_search input").toggleClass "hidden"
     $("#flyout_toggle").toggleClass "hide"
     if $(this).parent().hasClass "open"
