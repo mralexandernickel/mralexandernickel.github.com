@@ -8569,18 +8569,18 @@ a.badge:focus {
   float: left;
 }
 #flyout .flyout-bar .nav-desktop li.active a {
-  background: #049cdb;
+  background: #e44d26;
   color: #ffffff;
-  border-top: 5px solid #049cdb;
+  border-top: 5px solid #e44d26;
 }
 #flyout .flyout-bar .nav-desktop li.active a:hover {
-  background: #049cdb;
-  border-top: 5px solid #049cdb;
+  background: #e44d26;
+  border-top: 5px solid #e44d26;
   color: #ffffff;
 }
 #flyout .flyout-bar .nav-desktop li a {
   font-family: 'Source Sans Pro', sans-serif;
-  color: #049cdb;
+  color: #e44d26;
   font-size: 24px;
   line-height: 40px;
   height: 40px;
@@ -8592,8 +8592,8 @@ a.badge:focus {
 #flyout .flyout-bar .nav-desktop li a:hover {
   text-decoration: none;
   background: #ffffff;
-  color: #e44d26;
-  border-top: 5px solid #e44d26;
+  color: #049cdb;
+  border-top: 5px solid #049cdb;
 }
 #flyout .flyout-bar #flyout_search {
   position: absolute;
@@ -8784,17 +8784,17 @@ body > header .container {
   text-align: center;
   font-size: 26px;
   color: #ffffff;
-  background: #049cdb;
+  background: #e44d26;
   margin: 40px auto;
   width: 200px;
 }
 .totop:hover {
   text-decoration: none;
   color: #ffffff;
-  background: #e44d26;
+  background: #049cdb;
 }
 .totop:active {
-  background: #e44d26;
+  background: #049cdb;
 }
 article header h4 {
   font-size: 16px !important;
@@ -8821,7 +8821,7 @@ article.teaser .read_more {
   font-family: 'Source Sans Pro', sans-serif;
   display: block;
   text-transform: uppercase;
-  color: #049cdb !important;
+  color: #e44d26 !important;
   font-size: 20px;
   line-height: 30px;
   height: 30px;
@@ -8829,11 +8829,11 @@ article.teaser .read_more {
   text-indent: 7px;
 }
 article.teaser .read_more:hover {
-  color: #e44d26;
+  color: #049cdb;
   text-decoration: none;
 }
 article.teaser .read_more:active {
-  color: #e44d26;
+  color: #049cdb;
 }
 #search_results_container {
   position: absolute;
