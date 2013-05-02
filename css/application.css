@@ -8748,12 +8748,12 @@ h3 {
   body > header .nav-desktop li a {
     font-family: 'Source Sans Pro', sans-serif;
     color: #049cdb;
-    font-size: 36px;
-    line-height: 50px;
-    padding: 0 25px;
+    font-size: 26px;
+    line-height: 40px;
+    padding: 0 20px;
   }
   body > header .nav-desktop li a:hover {
-    color: #049cdb;
+    color: #ffffff;
     text-decoration: none;
   }
 }
