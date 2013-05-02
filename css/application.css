@@ -8576,14 +8576,17 @@ a.badge:focus {
   font-family: 'Source Sans Pro', sans-serif;
   color: #049cdb;
   font-size: 24px;
-  line-height: 45px;
-  height: 45px;
+  line-height: 40px;
+  height: 40px;
   padding: 0 20px;
   text-transform: uppercase;
   display: block;
+  border-top: 5px solid #ffffff;
 }
 #flyout .flyout-bar .nav-desktop li a:hover {
   text-decoration: none;
+  background: #ffffff;
+  border-top: 5px solid #ffffff;
 }
 #flyout .flyout-bar #flyout_search {
   position: absolute;
