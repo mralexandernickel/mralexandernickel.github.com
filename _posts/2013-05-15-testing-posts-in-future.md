@@ -1,6 +1,6 @@
 ---
 layout: post
-author: Alexander Nickel <mr.alexander.nickel@gmail.com>
+author: Alexander Nickel
 category: testing
 tags:
   - future
