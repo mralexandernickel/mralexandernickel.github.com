@@ -7,3 +7,6 @@
 [submodule "assets/lib/less-fontstacks"]
 	path = assets/lib/less-fontstacks
 	url = git://github.com/mralexandernickel/less-fontstacks.git
+[submodule "assets/lib/less-easing"]
+	path = assets/lib/less-easing
+	url = git://github.com/mralexandernickel/less-easing.git
