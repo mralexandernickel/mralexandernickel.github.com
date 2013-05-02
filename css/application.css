@@ -8836,7 +8836,6 @@ article.teaser {
   border-bottom: 1px solid #eeeeee;
   padding-top: 20px;
   padding-bottom: 20px;
-  background: #ffffff;
 }
 article.teaser:first-child {
   padding-top: 0;
@@ -8872,6 +8871,9 @@ article.teaser .read_more:active {
   left: 0;
   z-index: 98;
   width: 100%;
+}
+#search_results_container #search_results > div {
+  background: #ffffff;
 }
 #search_results_container #search_results article.teaser {
   margin-left: 20px;
