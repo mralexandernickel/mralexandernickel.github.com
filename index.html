@@ -4,11 +4,11 @@ layout: default
 <div class="row">
   <div class="span8">
     {% for post in site.posts limit:10 %}
-    <div class="post">
+    <article class="teaser">
       <a href="{{ BASE_PATH }}{{ post.url }}">
         <h3>{{ post.title }} <small>{{ post.date | date_to_string }}</small></h3>
       </a>
-    </div>
+    </article>
     {% endfor %}
   </div>
   <div class="span4 visible-desktop">
