@@ -8536,7 +8536,7 @@ a.badge:focus {
   margin-left: 20px;
 }
 #flyout .flyout-bar .toggle:active {
-  color: #049cdb;
+  color: #000000;
 }
 #flyout .flyout-bar .toggle:hover {
   text-decoration: none;
@@ -8592,8 +8592,8 @@ a.badge:focus {
 #flyout .flyout-bar .nav-desktop li a:hover {
   text-decoration: none;
   background: #ffffff;
-  color: #049cdb;
-  border-top: 5px solid #049cdb;
+  color: #000000;
+  border-top: 5px solid #000000;
 }
 #flyout .flyout-bar #flyout_search {
   position: absolute;
@@ -8693,7 +8693,7 @@ a.badge:focus {
 }
 #flyout .container-flyout ul.nav li a:active {
   background-color: rgba(0, 0, 0, 0.3);
-  border-left: 7px solid #049cdb;
+  border-left: 7px solid #000000;
 }
 html,
 body {
@@ -8791,10 +8791,10 @@ body > header .container {
 .totop:hover {
   text-decoration: none;
   color: #ffffff;
-  background: #049cdb;
+  background: #000000;
 }
 .totop:active {
-  background: #049cdb;
+  background: #000000;
 }
 article header h4 {
   font-size: 16px !important;
@@ -8829,11 +8829,11 @@ article.teaser .read_more {
   text-indent: 7px;
 }
 article.teaser .read_more:hover {
-  color: #049cdb;
+  color: #000000;
   text-decoration: none;
 }
 article.teaser .read_more:active {
-  color: #049cdb;
+  color: #000000;
 }
 #search_results_container {
   position: absolute;
