@@ -8575,9 +8575,9 @@ a.badge:focus {
 #flyout .flyout-bar .nav-desktop li a {
   font-family: 'Source Sans Pro', sans-serif;
   color: #049cdb;
-  font-size: 26px;
-  line-height: 50px;
-  height: 50px;
+  font-size: 24px;
+  line-height: 45px;
+  height: 45px;
   padding: 0 20px;
   text-transform: uppercase;
   display: block;
