@@ -8792,6 +8792,7 @@ article.teaser .read_more:active {
 }
 #search_results article.teaser {
   padding-left: 20px;
+  padding-right: 20px;
 }
 #search_results article.teaser:first-child {
   margin-top: 50px;
