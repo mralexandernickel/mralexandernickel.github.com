@@ -8520,9 +8520,6 @@ a.badge:focus {
 #flyout.open {
   left: 0;
 }
-#flyout #flyout_bar_container {
-  position: relative;
-}
 #flyout .flyout-bar {
   position: absolute;
   left: 100%;
@@ -8737,6 +8734,9 @@ body.no-positionfixed #main {
   padding: 0 20px;
 }
 @media (min-width: 980px) {
+  #flyout_bar_container {
+    position: relative;
+  }
   #flyout_search input {
     width: 950px;
   }
