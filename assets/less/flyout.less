@@ -232,14 +232,19 @@ html, body {
 
 // just desktops
 @media (min-width: 980px) {
+  #flyout_search {
+    input {
+      width: 950px;
+    }
+  }
 }
 
 // just tablets & small desktops
 @media (min-width: 768px) and (max-width: 979px) {
 }
 
-// just phone
-@media (max-width: 767px) {
+// small desktops, tablets and phones
+@media (max-width: 979px) {
   #flyout_search {
     input {
       position: absolute;

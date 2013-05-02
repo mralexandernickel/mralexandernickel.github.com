@@ -8737,12 +8737,14 @@ body.no-positionfixed #main {
   padding: 0 20px;
 }
 @media (min-width: 980px) {
-  
+  #flyout_search input {
+    width: 950px;
+  }
 }
 @media (min-width: 768px) and (max-width: 979px) {
   
 }
-@media (max-width: 767px) {
+@media (max-width: 979px) {
   #flyout_search input {
     position: absolute;
     z-index: 6;
