@@ -12,8 +12,16 @@ article {
   }
   
   &.teaser {
+    border-bottom: 1px solid @grayLight;
+    padding-top: @baseLineHeight;
+    padding-bottom: @baseLineHeight;
+    
+    &:first-child {
+      padding-top: 0 !important;
+    }
+    
     .content_wrap {
-      max-height: 100px;// 5 lines visible, as line-height is 20px!
+      max-height: @baseLineHeight * 5;
       overflow: hidden;
     }
   }
