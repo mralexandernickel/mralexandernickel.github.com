@@ -8504,6 +8504,7 @@ a.badge:focus {
   -webkit-tap-highlight-color: transparent;
 }
 #flyout {
+  font-family: 'Source Sans Pro', sans-serif;
   z-index: 99;
   top: 0;
   left: -75%;
