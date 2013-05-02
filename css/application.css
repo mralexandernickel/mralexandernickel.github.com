@@ -8650,6 +8650,7 @@ a.badge:focus {
   -moz-border-radius: 0px;
   border-radius: 0px;
   opacity: 1;
+  width: 100%;
 }
 #flyout .flyout-bar #flyout_search input.hidden {
   -webkit-transition: opacity 200ms ease-in-out;
@@ -8743,7 +8744,6 @@ body.no-positionfixed #main {
 }
 @media (max-width: 767px) {
   #flyout_search input {
-    width: 100%;
     position: absolute;
     z-index: 6;
   }
