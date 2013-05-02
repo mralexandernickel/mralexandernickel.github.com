@@ -8729,21 +8729,21 @@ h6 {
   text-transform: uppercase;
 }
 @media (min-width: 768px) {
-  header {
+  body > header {
     margin-top: 20px;
   }
-  header .nav {
+  body > header .nav {
     margin-top: 262px;
   }
 }
 @media (max-width: 767px) {
-  header {
+  body > header {
     margin-top: 60px;
   }
-  header .span4 {
+  body > header .span4 {
     text-align: center;
   }
-  header .span8 {
+  body > header .span8 {
     display: none;
   }
 }
