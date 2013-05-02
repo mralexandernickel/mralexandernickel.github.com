@@ -4055,17 +4055,17 @@ input[type="button"].btn-block {
 .btn-warning {
   color: #ffffff;
   text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
-  background-color: #faa732;
-  background-image: -moz-linear-gradient(top, #fbb450, #f89406);
-  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#fbb450), to(#f89406));
-  background-image: -webkit-linear-gradient(top, #fbb450, #f89406);
-  background-image: -o-linear-gradient(top, #fbb450, #f89406);
-  background-image: linear-gradient(to bottom, #fbb450, #f89406);
+  background-color: #e96e4f;
+  background-image: -moz-linear-gradient(top, #ec856a, #e44d26);
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#ec856a), to(#e44d26));
+  background-image: -webkit-linear-gradient(top, #ec856a, #e44d26);
+  background-image: -o-linear-gradient(top, #ec856a, #e44d26);
+  background-image: linear-gradient(to bottom, #ec856a, #e44d26);
   background-repeat: repeat-x;
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#fffbb450', endColorstr='#fff89406', GradientType=0);
-  border-color: #f89406 #f89406 #ad6704;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffec856a', endColorstr='#ffe44d26', GradientType=0);
+  border-color: #e44d26 #e44d26 #a93315;
   border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
-  *background-color: #f89406;
+  *background-color: #e44d26;
   /* Darken IE7 buttons by default so they stand out more given they won't have borders */
 
   filter: progid:DXImageTransform.Microsoft.gradient(enabled = false);
@@ -4077,12 +4077,12 @@ input[type="button"].btn-block {
 .btn-warning.disabled,
 .btn-warning[disabled] {
   color: #ffffff;
-  background-color: #f89406;
-  *background-color: #df8505;
+  background-color: #e44d26;
+  *background-color: #d6411b;
 }
 .btn-warning:active,
 .btn-warning.active {
-  background-color: #c67605 \9;
+  background-color: #bf3a18 \9;
 }
 .btn-warning:hover,
 .btn-warning:focus,
@@ -4091,12 +4091,12 @@ input[type="button"].btn-block {
 .btn-warning.disabled,
 .btn-warning[disabled] {
   color: #ffffff;
-  background-color: #f89406;
-  *background-color: #df8505;
+  background-color: #e44d26;
+  *background-color: #d6411b;
 }
 .btn-warning:active,
 .btn-warning.active {
-  background-color: #c67605 \9;
+  background-color: #bf3a18 \9;
 }
 .btn-danger {
   color: #ffffff;
@@ -4473,7 +4473,7 @@ input[type="submit"].btn.btn-mini {
   background-color: #0044cc;
 }
 .btn-group.open .btn-warning.dropdown-toggle {
-  background-color: #f89406;
+  background-color: #e44d26;
 }
 .btn-group.open .btn-danger.dropdown-toggle {
   background-color: #bd362f;
@@ -6209,11 +6209,11 @@ a.badge:focus {
 }
 .label-warning,
 .badge-warning {
-  background-color: #f89406;
+  background-color: #e44d26;
 }
 .label-warning[href],
 .badge-warning[href] {
-  background-color: #c67605;
+  background-color: #bf3a18;
 }
 .label-success,
 .badge-success {
@@ -6420,18 +6420,18 @@ a.badge:focus {
 }
 .progress-warning .bar,
 .progress .bar-warning {
-  background-color: #faa732;
-  background-image: -moz-linear-gradient(top, #fbb450, #f89406);
-  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#fbb450), to(#f89406));
-  background-image: -webkit-linear-gradient(top, #fbb450, #f89406);
-  background-image: -o-linear-gradient(top, #fbb450, #f89406);
-  background-image: linear-gradient(to bottom, #fbb450, #f89406);
+  background-color: #e96e4f;
+  background-image: -moz-linear-gradient(top, #ec856a, #e44d26);
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#ec856a), to(#e44d26));
+  background-image: -webkit-linear-gradient(top, #ec856a, #e44d26);
+  background-image: -o-linear-gradient(top, #ec856a, #e44d26);
+  background-image: linear-gradient(to bottom, #ec856a, #e44d26);
   background-repeat: repeat-x;
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#fffbb450', endColorstr='#fff89406', GradientType=0);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffec856a', endColorstr='#ffe44d26', GradientType=0);
 }
 .progress-warning.progress-striped .bar,
 .progress-striped .bar-warning {
-  background-color: #fbb450;
+  background-color: #ec856a;
   background-image: -webkit-gradient(linear, 0 100%, 100% 0, color-stop(0.25, rgba(255, 255, 255, 0.15)), color-stop(0.25, transparent), color-stop(0.5, transparent), color-stop(0.5, rgba(255, 255, 255, 0.15)), color-stop(0.75, rgba(255, 255, 255, 0.15)), color-stop(0.75, transparent), to(transparent));
   background-image: -webkit-linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
   background-image: -moz-linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
@@ -8569,13 +8569,13 @@ a.badge:focus {
   float: left;
 }
 #flyout .flyout-bar .nav-desktop li.active a {
-  background: #F14A29;
+  background: #f16529;
   color: #ffffff;
-  border-top: 5px solid #F14A29;
+  border-top: 5px solid #f16529;
 }
 #flyout .flyout-bar .nav-desktop li.active a:hover {
   background: #F14A29;
-  border-top: 5px solid #F14A29;
+  border-top: 5px solid #f16529;
   color: #ffffff;
 }
 #flyout .flyout-bar .nav-desktop li a {
@@ -8592,15 +8592,15 @@ a.badge:focus {
 #flyout .flyout-bar .nav-desktop li a:hover {
   text-decoration: none;
   background: #ffffff;
-  color: #F14A29;
-  border-top: 5px solid #F14A29;
+  color: #f16529;
+  border-top: 5px solid #f16529;
 }
 #flyout .flyout-bar #flyout_search {
   position: absolute;
   width: 60px;
   top: 0;
   right: 0;
-  background: #fff;
+  background: #ffffff;
   z-index: 99;
   height: 50px;
   *zoom: 1;
@@ -8669,7 +8669,7 @@ a.badge:focus {
   margin-left: 0 !important;
   margin-right: 0 !important;
   text-shadow: 0 1px 0 rgba(0, 0, 0, 0.5);
-  border-bottom: 2px solid #F14A29;
+  border-bottom: 2px solid #f16529;
   color: #F14A29;
 }
 #flyout .container-flyout ul.nav li.active a {
@@ -8693,7 +8693,7 @@ a.badge:focus {
 }
 #flyout .container-flyout ul.nav li a:active {
   background-color: rgba(0, 0, 0, 0.3);
-  border-left: 7px solid #F14A29;
+  border-left: 7px solid #f16529;
 }
 html,
 body {
@@ -8791,9 +8791,10 @@ body > header .container {
 .totop:hover {
   text-decoration: none;
   color: #ffffff;
+  background: #f16529;
 }
 .totop:active {
-  background: #F14A29;
+  background: #f16529;
 }
 article header h4 {
   font-size: 16px !important;
@@ -8832,7 +8833,7 @@ article.teaser .read_more:hover {
   text-decoration: none;
 }
 article.teaser .read_more:active {
-  color: #F14A29;
+  color: #f16529;
 }
 #search_results_container {
   position: absolute;
@@ -8859,7 +8860,7 @@ article.teaser .read_more:active {
   color: #333;
 }
 #search_results_container #search_results article.teaser a:active {
-  color: #F14A29;
+  color: #f16529;
 }
 .pull-right {
   float: right;
