@@ -8696,7 +8696,7 @@ body.no-positionfixed #main {
   bottom: 0;
 }
 #backdrop .result {
-  margin: 10px 10px 0;
+  margin: 0;
   padding: 10px 20px;
   background: #ffffff;
   -webkit-box-shadow: 0 0 5px rgba(0, 0, 0, 0.7);
@@ -8704,7 +8704,7 @@ body.no-positionfixed #main {
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.7);
 }
 #backdrop .result:first-child {
-  margin-top: 60px;
+  margin-top: 50px;
 }
 #backdrop .result a {
   color: #049cdb;
