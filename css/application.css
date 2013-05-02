@@ -8757,16 +8757,8 @@ h3 {
 body > header {
   margin-top: 60px;
 }
-@media (min-width: 768px) {
-  
-}
-@media (max-width: 767px) {
-  body > header .span4 {
-    text-align: center;
-  }
-  body > header .span8 {
-    display: none;
-  }
+body > header .container {
+  text-align: center;
 }
 .totop {
   display: block;
