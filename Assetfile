@@ -8,7 +8,7 @@ output "css"
 # compile and concat all LESS files...
 input "assets" do
   match "less/master.less" do
-    less :paths => ["assets/lib/bootstrap/less","assets/lib/font-awesome/less","assets/lib/flyout/assets/less","assets/lib/less-easing/less","assets/lib/less-fontstacks/less","assets/less"]
+    less :paths => ["assets/lib/bootstrap/less","assets/lib/font-awesome/less","assets/lib/less-easing/less","assets/lib/less-fontstacks/less","assets/less"]
       copy "application.css"
   end
 end
@@ -27,14 +27,6 @@ end
 input "assets/lib/bootstrap" do
   match "js/*.js" do
     concat ["js/bootstrap-transition.js","js/bootstrap-tooltip.js"], "bootstrap.js"
-  end
-end
-
-# compile flyout
-input "assets/lib/flyout/assets" do
-  match "coffee/*.coffee" do
-    coffee_script
-    concat "flyout.js"
   end
 end
 
