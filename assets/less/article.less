@@ -24,6 +24,7 @@ article {
     
     &:last-child {
       border-bottom: 0;
+      padding-bottom: 0;
     }
     
     .content_wrap {
@@ -62,6 +63,11 @@ article {
     
     &:first-child {
       margin-top: 50px;
+      padding-top: @baseLineHeight;
+    }
+    
+    &:last-child {
+      padding-bottom: @baseLineHeight;
     }
   }
 }

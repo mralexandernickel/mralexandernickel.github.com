@@ -8766,6 +8766,7 @@ article.teaser:first-child {
 }
 article.teaser:last-child {
   border-bottom: 0;
+  padding-bottom: 0;
 }
 article.teaser .content_wrap {
   max-height: 100px;
@@ -8794,6 +8795,10 @@ article.teaser .read_more:active {
 }
 #search_results article.teaser:first-child {
   margin-top: 50px;
+  padding-top: 20px;
+}
+#search_results article.teaser:last-child {
+  padding-bottom: 20px;
 }
 .pull-right {
   float: right;
