@@ -24,6 +24,10 @@
     left: 0;
   }
   
+  #flyout_bar_container {
+    position: relative;
+  }
+  
   .flyout-bar {
     position: absolute;
     left: 100%;
@@ -111,10 +115,6 @@
     
       &.open {
         width: 100%;
-        
-        #flyout_search_toggle {
-          position: absolute;
-        }
       }
       
       #flyout_search_toggle {
@@ -235,6 +235,11 @@ html, body {
 // just phone
 @media (max-width: 767px) {
   #flyout_search {
+    &.open {
+      #flyout_search_toggle {
+        position: absolute;
+      }
+    }
     input {
       width: 100%;
       position: absolute;
