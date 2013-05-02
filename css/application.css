@@ -8510,11 +8510,11 @@ a.badge:focus {
   bottom: -10%;
   width: 75%;
   background: #333;
-  -webkit-transition: 200ms 700ms ease-in-out;
-  -moz-transition: 200ms 700ms ease-in-out;
-  -ms-transition: 200ms 700ms ease-in-out;
-  -o-transition: 200ms 700ms ease-in-out;
-  transition: 200ms 700ms ease-in-out;
+  -webkit-transition: left 200ms ease-in-out;
+  -moz-transition: left 200ms ease-in-out;
+  -ms-transition: left 200ms ease-in-out;
+  -o-transition: left 200ms ease-in-out;
+  transition: left 200ms ease-in-out;
 }
 #flyout.open {
   left: 0;
