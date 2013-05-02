@@ -8650,7 +8650,7 @@ a.badge:focus {
   -moz-border-radius: 0px;
   border-radius: 0px;
   opacity: 1;
-  width: 100%;
+  width: 98%;
 }
 #flyout .flyout-bar #flyout_search input.hidden {
   -webkit-transition: opacity 200ms ease-in-out;
