@@ -8569,14 +8569,14 @@ a.badge:focus {
   float: left;
 }
 #flyout .flyout-bar .nav-desktop li.active a {
-  background: #e44d26;
+  background: #049cdb;
   color: #ffffff;
-  border-top: 5px solid #e44d26;
+  border-top: 5px solid #049cdb;
 }
 #flyout .flyout-bar .nav-desktop li.active a:hover {
-  background: #e44d26;
-  border-top: 5px solid #e44d26;
-  color: #ffffff;
+  background: #049cdb;
+  border-top: 5px solid #049cdb;
+  color: #049cdb;
 }
 #flyout .flyout-bar .nav-desktop li a {
   font-family: 'Source Sans Pro', sans-serif;
