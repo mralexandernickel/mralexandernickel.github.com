@@ -8786,9 +8786,11 @@ body > header .container {
   display: block;
   font-family: 'Source Sans Pro', sans-serif;
   text-transform: uppercase;
-  padding: 10px 0;
+  padding: 0;
+  height: 45px;
+  line-height: 45px;
   text-align: center;
-  font-size: 26px;
+  font-size: 22px;
   color: #ffffff;
   background: #e44d26;
   margin: 40px auto;
