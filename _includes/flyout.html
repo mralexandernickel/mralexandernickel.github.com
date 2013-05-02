@@ -3,6 +3,21 @@
     <a id="flyout_toggle" class="toggle hidden-desktop" href="#">
       <i class="icon-reorder"></i>
     </a>
+    <ul class="nav nav-desktop">
+      {% if page.url == '/index.html' %}
+        {% assign active_index = 'active' %}
+      {% endif %}
+      <li class="{{ active_index }}"><a href="/">Blog</a></li>
+      {% for link in site.navigation %}
+        {% assign active = nil %}
+        {% if page.url == link.url or page.layout == link.layout %}
+          {% assign active = 'active' %}
+        {% endif %}
+        <li class="{{ active }}">
+          <a href="{{ link.url }}">{{ link.text }}</a>
+        </li>
+      {% endfor %}
+    </ul>
     <div id="flyout_search" class="pull-right">
       <a id="flyout_search_toggle" class="toggle" href="#">
         <i class="icon-search"></i>
