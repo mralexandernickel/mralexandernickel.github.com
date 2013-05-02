@@ -8742,7 +8742,9 @@ body.no-positionfixed #main {
   }
 }
 @media (min-width: 768px) and (max-width: 979px) {
-  
+  #flyout_search_container {
+    width: auto !important;
+  }
 }
 @media (max-width: 979px) {
   #flyout_search input {
