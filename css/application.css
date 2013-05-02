@@ -8630,6 +8630,9 @@ a.badge:focus {
 #flyout .flyout-bar #flyout_search.open {
   width: 100%;
 }
+#flyout .flyout-bar #flyout_search.open #flyout_search_toggle {
+  position: absolute;
+}
 #flyout .flyout-bar #flyout_search #flyout_search_toggle {
   margin-right: 20px;
   z-index: 7;
