@@ -8575,6 +8575,7 @@ a.badge:focus {
 }
 #flyout .flyout-bar .nav-desktop li.active a:hover {
   background: #049cdb;
+  border-top: 5px solid #049cdb;
 }
 #flyout .flyout-bar .nav-desktop li a {
   font-family: 'Source Sans Pro', sans-serif;
@@ -8589,7 +8590,8 @@ a.badge:focus {
 }
 #flyout .flyout-bar .nav-desktop li a:hover {
   text-decoration: none;
-  background: #F14A29;
+  background: #ffffff;
+  color: #F14A29;
   border-top: 5px solid #F14A29;
 }
 #flyout .flyout-bar #flyout_search {
