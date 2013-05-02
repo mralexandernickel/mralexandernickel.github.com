@@ -8766,6 +8766,10 @@ h3 {
 article header h4 {
   font-size: 16px !important;
 }
+article.teaser .content_wrap {
+  max-height: 100px;
+  overflow: hidden;
+}
 .pull-right {
   float: right;
 }
