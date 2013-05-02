@@ -8874,8 +8874,8 @@ article.teaser .read_more:active {
   width: 100%;
 }
 #search_results_container #search_results article.teaser {
-  padding-left: 20px;
-  padding-right: 20px;
+  margin-left: 20px;
+  margin-right: 20px;
 }
 #search_results_container #search_results article.teaser:first-child {
   padding-top: 20px;
