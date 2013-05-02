@@ -8800,6 +8800,17 @@ article.teaser .read_more:active {
 #search_results article.teaser:last-child {
   padding-bottom: 20px;
 }
+#search_results article.teaser a {
+  color: #333;
+  display: block;
+}
+#search_results article.teaser a:hover {
+  text-decoration: none;
+  color: #333;
+}
+#search_results article.teaser a:active {
+  color: #F14A29;
+}
 .pull-right {
   float: right;
 }
