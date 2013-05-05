@@ -1,3 +1,11 @@
+---
+layout: post
+author: Alexander nickel
+category: Jekyll
+tags:
+  - jekyll
+  - http
+---
 For some time now, I was looking for a Solution for myself to collect and maybe publish Information, Techniques or just Thoughts that come across while working on Projects. Any Blogging Software or Service should bring everything I need, but as a Developer I also want maximum Flexibility and maximum Speed. Both of these Requirements been bringing me, once again, to the point "just code everything you need by yourself!"...
 
 The last Time setting up up a Wordpress System for a Customer, I was generating static copies of the Loops output and just regenerating them if a User signs out of the Wordpress Admin, as changes on most Pages of this Project are just appearing if somebody did something, exactly there. Saving static copies of dynamically generated Pages is nothing new, also triggering the Cache-Flush on "Admin Logout" is done in several Systems I know of, but for some reason, after this Project I was thinking about how all this Blog, Portfolio or small Company Website Content gets created and in (kind of) an opposite way delivered to the client.
