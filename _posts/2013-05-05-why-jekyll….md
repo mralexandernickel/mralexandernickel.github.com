@@ -17,13 +17,13 @@ The main point is the simple fact that dynamic webcontent just don't gets cached
 We could even go that far and say that this behaviour is directly influencing the environment, if we are setting this into context to the energy used by Webservers these days. Saying that, we could even go further and say that *our code is doing also*, as an efficient written block of code will use less CPU and therefore account less energy... this is of course totally blown up, but in the end not that wrong.
 
 <blockquote>
-### Google accounts for roughly 0.013 percent of the world’s energy use
+<h3>Google accounts for roughly 0.013 percent of the world’s energy use</h3>
 
-Data centers in general are responsible for 1.3 percent of the world’s electricity consumption, according to one estimate, and Google says it accounts for a mere one-hundredth of that statistic. Do the math. The company claims that its data centers are twice as energy-efficient as most others.
+<p>Data centers in general are responsible for 1.3 percent of the world’s electricity consumption, according to one estimate, and Google says it accounts for a mere one-hundredth of that statistic. Do the math. The company claims that its data centers are twice as energy-efficient as most others.</p>
 
-### One Google search is equal to turning on a 60W light bulb for 17 seconds
+<h3>One Google search is equal to turning on a 60W light bulb for 17 seconds</h3>
 
-Google says it spends about 0.0003 kWh of energy on an average search query, translating to roughly 0.2g of carbon dioxide. Related fact: searching the web 100 times is equivalent to drinking 1.5 tablespoons of orange juice, Google says. That’s hard work!
+<p>Google says it spends about 0.0003 kWh of energy on an average search query, translating to roughly 0.2g of carbon dioxide. Related fact: searching the web 100 times is equivalent to drinking 1.5 tablespoons of orange juice, Google says. That’s hard work!</p>
 <small>found on [techland.time.com]( http://techland.time.com/2011/09/09/6-things-youd-never-guess-about-googles-energy-use/)
 </blockquote>
 
