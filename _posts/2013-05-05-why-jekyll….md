@@ -1,7 +1,7 @@
 ---
 layout: post
-author: Alexander nickel
-category: Jekyll
+author: Alexander Nickel
+category: jekyll
 tags:
   - jekyll
   - http
