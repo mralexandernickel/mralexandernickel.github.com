@@ -17,14 +17,14 @@ The main point is the simple fact that dynamic webcontent just don't gets cached
 We could even go that far and say that this behaviour is directly influencing the environment, if we are setting this into context to the energy used by Webservers these days. Saying that, we could even go further and say that *our code is doing also*, as an efficient written block of code will use less CPU and therefore account less energy... this is of course totally blown up, but in the end not that wrong.
 
 <blockquote>
-<h3>Google accounts for roughly 0.013 percent of the world’s energy use</h3>
+<p><strong>Google accounts for roughly 0.013 percent of the world’s energy use</strong></p>
 
 <p>Data centers in general are responsible for 1.3 percent of the world’s electricity consumption, according to one estimate, and Google says it accounts for a mere one-hundredth of that statistic. Do the math. The company claims that its data centers are twice as energy-efficient as most others.</p>
 
-<h3>One Google search is equal to turning on a 60W light bulb for 17 seconds</h3>
+<p><strong>One Google search is equal to turning on a 60W light bulb for 17 seconds</strong></p>
 
 <p>Google says it spends about 0.0003 kWh of energy on an average search query, translating to roughly 0.2g of carbon dioxide. Related fact: searching the web 100 times is equivalent to drinking 1.5 tablespoons of orange juice, Google says. That’s hard work!</p>
-<small>found on [techland.time.com](http://techland.time.com/2011/09/09/6-things-youd-never-guess-about-googles-energy-use/)</small>
+<small>found on <a href="http://techland.time.com/2011/09/09/6-things-youd-never-guess-about-googles-energy-use/">techland.time.com</a></small>
 </blockquote>
 
 I already took a quick look into Jekyll when I found out that it's supported on github pages, but haven't tried the posts feature of it. For those who haven't heard of it
@@ -32,12 +32,12 @@ I already took a quick look into Jekyll when I found out that it's supported on 
 <blockquote><p>
 Jekyll is a simple, blog aware, static site generator. It takes a template directory (representing the raw form of a website), runs it through Textile or Markdown and Liquid converters, and spits out a complete, static website suitable for serving with Apache or your favorite web server.
 </p>
-<small>Description given on [github page](https://github.com/mojombo/jekyll)</small>
+<small>Description given on <a href="https://github.com/mojombo/jekyll">github page</a></small>
 </blockquote>
 
 So I was digging in my code archives for this first Jekyll Setup I made, which have been basically this here
 
-## _config.yml
+### \_config.yml
 
 {% highlight yaml %}
 navigation:
@@ -47,7 +47,7 @@ navigation:
   url: /about.html
 {% endhighlight %}
 
-## _layouts/default.html
+### \_layouts/default.html
 
 {% highlight html %}
 <html>
@@ -61,7 +61,7 @@ navigation:
 </html>
 {% endhighlight %}
 
-## _includes/navigation.html
+### \_includes/navigation.html
 
 {% highlight html %}
 <ul class="nav">
@@ -77,7 +77,7 @@ navigation:
 </ul>
 {% endhighlight %}
 
-## index.html
+### index.html
 
 {% highlight html %}
 ---
@@ -86,7 +86,7 @@ layout: default
 <h1>Start Page</h1>
 {% endhighlight %}
 
-## about.html
+### about.html
 
 {% highlight html %}
 ---
