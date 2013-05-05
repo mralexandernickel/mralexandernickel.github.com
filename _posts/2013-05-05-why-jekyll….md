@@ -24,7 +24,7 @@ We could even go that far and say that this behaviour is directly influencing th
 <h3>One Google search is equal to turning on a 60W light bulb for 17 seconds</h3>
 
 <p>Google says it spends about 0.0003 kWh of energy on an average search query, translating to roughly 0.2g of carbon dioxide. Related fact: searching the web 100 times is equivalent to drinking 1.5 tablespoons of orange juice, Google says. That’s hard work!</p>
-<small>found on [techland.time.com]( http://techland.time.com/2011/09/09/6-things-youd-never-guess-about-googles-energy-use/)
+<small>found on [techland.time.com](http://techland.time.com/2011/09/09/6-things-youd-never-guess-about-googles-energy-use/)</small>
 </blockquote>
 
 I already took a quick look into Jekyll when I found out that it's supported on github pages, but haven't tried the posts feature of it. For those who haven't heard of it
