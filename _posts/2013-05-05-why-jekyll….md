@@ -37,7 +37,7 @@ Jekyll is a simple, blog aware, static site generator. It takes a template direc
 
 So I was digging in my code archives for this first Jekyll Setup I made, which have been basically this here
 
-### \_config.yml
+#### \_config.yml
 
 {% highlight yaml %}
 navigation:
@@ -47,7 +47,7 @@ navigation:
   url: /about.html
 {% endhighlight %}
 
-### \_layouts/default.html
+#### \_layouts/default.html
 
 {% highlight html %}
 <html>
@@ -61,7 +61,7 @@ navigation:
 </html>
 {% endhighlight %}
 
-### \_includes/navigation.html
+#### \_includes/navigation.html
 
 {% highlight html %}
 <ul class="nav">
@@ -77,7 +77,7 @@ navigation:
 </ul>
 {% endhighlight %}
 
-### index.html
+#### index.html
 
 {% highlight html %}
 ---
@@ -86,7 +86,7 @@ layout: default
 <h1>Start Page</h1>
 {% endhighlight %}
 
-### about.html
+#### about.html
 
 {% highlight html %}
 ---
