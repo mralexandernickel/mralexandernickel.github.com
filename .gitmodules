@@ -10,3 +10,6 @@
 [submodule "assets/lib/less-easing"]
 	path = assets/lib/less-easing
 	url = git://github.com/mralexandernickel/less-easing.git
+[submodule "assets/lib/less-pygments"]
+	path = assets/lib/less-pygments
+	url = git://github.com/mralexandernickel/less-pygments.git
