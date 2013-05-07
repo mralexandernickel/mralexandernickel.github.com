@@ -65,7 +65,7 @@ navigation:
 
 #### \_includes/navigation.html
 
-{% highlight html linenos %}
+{% highlight html linenos=table %}
 {% raw %}
 <ul class="nav">
   {% for link in site.navigation %}
