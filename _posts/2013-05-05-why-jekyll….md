@@ -50,6 +50,7 @@ navigation:
 #### \_layouts/default.html
 
 {% highlight html %}
+{% raw %}
 <html>
   <head>
     <!-- ... -->
@@ -59,11 +60,13 @@ navigation:
     {{ content }}
   </body>
 </html>
+{% endraw %}
 {% endhighlight %}
 
 #### \_includes/navigation.html
 
 {% highlight html %}
+{% raw %}
 <ul class="nav">
   {% for link in site.navigation %}
     {% assign active = nil %}
@@ -75,6 +78,7 @@ navigation:
     </li>
   {% endfor %}
 </ul>
+{% endraw %}
 {% endhighlight %}
 
 #### index.html
