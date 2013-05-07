@@ -39,7 +39,7 @@ So I was digging in my code archives for this first Jekyll Setup I made, which h
 
 #### \_config.yml
 
-{% highlight yaml %}
+{% highlight yaml linenos %}
 navigation:
 - text: Start
   url: /
@@ -49,7 +49,7 @@ navigation:
 
 #### \_layouts/default.html
 
-{% highlight html %}
+{% highlight html linenos %}
 {% raw %}
 <html>
   <head>
@@ -65,7 +65,7 @@ navigation:
 
 #### \_includes/navigation.html
 
-{% highlight html %}
+{% highlight html linenos %}
 {% raw %}
 <ul class="nav">
   {% for link in site.navigation %}
@@ -83,7 +83,7 @@ navigation:
 
 #### index.html
 
-{% highlight html %}
+{% highlight html linenos %}
 ---
 layout: default
 ---
@@ -92,7 +92,7 @@ layout: default
 
 #### about.html
 
-{% highlight html %}
+{% highlight html linenos %}
 ---
 layout: default
 ---
